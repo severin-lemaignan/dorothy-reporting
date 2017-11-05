@@ -42,29 +42,41 @@ indicated below.
 1.2 Explanation of the work carried per WP
 ------------------------------------------
 
-
-
 ### WP1: *Models of social cognition for human-robot interaction*
 
 The objective of this work package was to design a formal, logic-based,
-model of theory of mind. Prior work on that topic was explored by the
-researcher and published in \[*Mutual Modelling in Robotics:
-Inspirations for the Next Steps*\].
-
-The researcher then investigated how neural networks (and in particular,
-Associative Memory Network) could be applied to mentalization.
+model of theory of mind. **This work package has evolved to investigate a broader
+model of social cognition, with an accompanying experimental methodology**.
 
 
 In this section, we report on the work conducted by the researcher to:
 
 1. investigate and frame the specific question of mutual modelling from the
   complementary perspectives of 3 disciplines (developmental psychology;
-  psychololinguistics; formal epistemology);
-2. integrate these perspectives into a new possible model (the *Socio-Cognitive Robotic Awareness
-   Model*);
+  psychololinguistics; formal epistemology) (task T1.1);
+2. integrate these perspectives into a new possible model applicable to
+   Human-Robot Interaction (the *Socio-Cognitive Robotic Awareness Model*) (task
+   T1.2);
 3. reframe the original question of mutual modelling into the broader question
    of *how interactions shape the emergence of social behaviours*, and propose
-   an experimental methodology to investigate this question.
+   an experimental methodology to investigate this question (T1.3 & T1.4).
+
+**Summary of the deliverables**
+
+| | |
+|-|-|
+| D1.1: Publication of a review of relevant literature | Published at HRI2015 [@lemaignan2015mutual] |
+| D1.2: Formal model of experiment 1 and 2 | *(no longer applicable, replaced by
+D1.4)*  |
+| D1.3: Publication of an experimental methodology to investigate models of social interaction | Publication submitted at HRI2018, under review: [@lemaignan2018freeplay]   |
+
+Additional deliverables
+
+| | |
+|-|-|
+| D1.4: Model of social cognition | The *Socio-Cognitive Robotic Awareness Model*, presented below |
+
+
 
 <!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
 <!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
@@ -855,10 +867,10 @@ temporal models). This architecture enables successive and modular
 refinement of the models (*cascading* situation assessment), effectively
 adapted to each client’s needs. *Dashed yellow nodes represent other
 possible components in the system that do not interact directly with the
-[[underworlds]{}]{} network*.[]{data-label="fig|scene"}](figs/underwords-overview.pdf){width="\linewidth"}
+[[underworlds]{}]{} network*.[]{data-label="fig|scene"}](figs/underworlds-overview.pdf){width="\linewidth"}
 
 
-[^3]: See Annex 6.2 for the source code repository
+[^3]: See [Annex 6.2](#annex62) for the source code repository
 
 ##### Cascading architecture
 
@@ -2039,7 +2051,7 @@ List of academic publications where the DoRoThy grant is acknowledged.
 
 
 
-6.2 Annex 2 - Open-source code contributions
+6.2 Annex 2 - Open-source code contributions {#annex62}
 --------------------------------------------
 
 
