@@ -64,16 +64,15 @@ In this section, we report on the work conducted by the researcher to:
 **Summary of the deliverables**
 
 | | |
-|-|-|
+|------------------------------------------------------|---------------------------------------------|
 | D1.1: Publication of a review of relevant literature | Published at HRI2015 [@lemaignan2015mutual] |
-| D1.2: Formal model of experiment 1 and 2 | *(no longer applicable, replaced by
-D1.4)*  |
+| D1.2: Formal model of experiment 1 and 2 | *(no longer applicable, replaced by D1.4)*  |
 | D1.3: Publication of an experimental methodology to investigate models of social interaction | Publication submitted at HRI2018, under review: [@lemaignan2018freeplay]   |
 
 Additional deliverables
 
 | | |
-|-|-|
+|------------------------------------------------------|---------------------------------------------|
 | D1.4: Model of social cognition | The *Socio-Cognitive Robotic Awareness Model*, presented below |
 
 
