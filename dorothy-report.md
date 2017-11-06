@@ -132,7 +132,7 @@ several, possibly conflicting, representations.
 This *connection-representation* account appears to be a significant
 component of a general theory of mind (one needs to recognize that the
 same object/concept may have different, serious, representations to then
-accept false beliefs for instance). Figure \[representation-level\]
+accept false beliefs for instance). @Fig:representation-level
 illustrates this difference between cognitive connections and
 representations in an imaginary human-robot interaction scenario. The
 *visual* perspective of the baby and the mother are represented: a robot
@@ -148,7 +148,7 @@ However, to correctly comprehend the scene (and for the robot to
 adequately react, *representation-level* perspective taking is required:
 what does the power socket means to the baby? What does the situation
 means to the
-mother?[]{data-label="representation-level"}](./figs/representation-perspective-taking.png){width="0.9\columnwidth"}
+mother?](./figs/representation-perspective-taking.png){#fig:representation-level width="0.9\columnwidth"}
 
 ##### Developmental pathopsychology
 
@@ -160,7 +160,7 @@ impairments), and Frith and Happé further note in  [@frith1994autism]
 that this specific deficit of autism has led to a large amount of
 research which proved, in turn, highly beneficial to the study of the
 development of theory of mind in general. They reference
-in [@frith1994autism] eight such tasks (Table \[mentalizing-tasks\]),
+in [@frith1994autism] eight such tasks (@tbl:mentalizing-tasks),
 identified during the study of social cognition by autistic children.
 Each of them is proposed in two versions: one does not require
 mentalizing, while the other does require it. One of these tasks, for
@@ -208,9 +208,9 @@ experimental social robotics.
   Literal expression                  Metaphorical expression [@happe1993communicative]
 
   : Tasks requiring or not mentalizing to pass, listed by Frith and
-  Happé in [@frith1994autism][]{data-label="mentalizing-tasks"}
+  Happé in [@frith1994autism]{#tbl:mentalizing-tasks}
 
-Frith and Happé’s list (Table \[mentalizing-tasks\]) is in that regard
+Frith and Happé’s list (@tbl:mentalizing-tasks) is in that regard
 especially interesting in that it mirrors pairs of task (ones which do
 not require mentalizing with similar ones which do require mentalizing),
 thus providing control tasks. *Object occlusion* vs. *Information
@@ -299,8 +299,7 @@ two agents that the father *intends* to go swimming and the child is
 *interested* in going swimming.
 
 Common belief (“we believe that we believe that we believe that... we
-agreed”) is defined in epistemic logic (see
-section \[formal-epistemology\]) as an infinite recursion
+agreed”) is defined in epistemic logic as an infinite recursion
 (“$\infty$-order” ToM), and Verbrugge suggests that this mutual
 modelling mechanism is therefore harder to master for children than
 2$^{nd}$-order ToM for instance.
@@ -616,9 +615,7 @@ recognizes that social modelling goes indeed beyond computing what the
 human perceives or does not perceive. This has been clearly recognized
 in developmental psychology, for instance with Flavell’s distinction
 between *cognitive connections* on one hand, and *mental
-representations* on the other hand (we will come back to Flavell’s
-*connection-representation* account in
-section \[connection-representation\]). Now, if we are to model someone
+representations* on the other hand. Now, if we are to model someone
 else’s mind beyond a naive geometric model of their perception, we
 indeed enter the realm of *representations*. What are they? How to
 access them? How to represent and manipulate them? These three questions
@@ -633,14 +630,6 @@ pre-suppose *symbolic* meta-representations, this is not the case: at
 that stage, we do not have evidence that a particular kind of
 computational structure may better support the representation and
 manipulation of mental representations.
-
-\[What is not adequately solved by current techniques?\]
-
-\[give concrete examples of social situations that are not easily
-achieveable with current (symbolic or not) approaches\]
-
-\[this examples should be turned into predictions for what our proposal
-should be able to achieve\]
 
 #### Phenomenal [*vs.*]{}Access Consciousness
 
@@ -1065,9 +1054,9 @@ existing software components with the network.
 
 Critically, the network is essentially hidden to the client: from the
 user perspective, the environment model is manipulated as a local data
-structure (see Listing \[lst|pythonapi\]). Modifications to the model
+structure. Modifications to the model
 are asynchronously synchronised with a central server (the
-[underworlded]{} daemon) and broadcast to every other client connected
+`underworlded` daemon) and broadcast to every other client connected
 to the same world. As previously mentioned, worlds are composite data
 structures comprised of a scene graph and a timeline. These data
 structures are synchronised using Google’s gRPC message passing
@@ -1248,7 +1237,7 @@ the children can change the environment to their liking. The players do
 not have any particular task to complete, they are simply invited to
 freely play. Importantly, they can play for as long as they wish (for
 practical reasons, we have limited the sessions to a maximum of 40
-minutes in our own experiments, see Section \[sec:dataset\]).
+minutes in our own experiments).
 
 Capturing all the interactions taking place during the play sessions is
 possible and practical with this setup. Even though the children will
@@ -1256,8 +1245,7 @@ typically move a little, the task is fundamentally a face-to-face,
 spatially delimited, interaction, and as such simplifies the data
 collection. For instance, during our dataset acquisition campaign (120
 children, more than 45h of footage), the children’s faces were
-automatically detected in 98% of the recorded frames (see
-Section \[sec:dataset\]).
+automatically detected in 98% of the recorded frames.
 
 ![Example of a possible game situation. Items (animals, characters...)
 can be dragged over the whole play area, while the background picture
@@ -1606,8 +1594,6 @@ Every dataframe is timestamped; as the data is recorded using ROS’s bag
 files, it can be replayed in the exact same conditions as it has been
 recorded. All the video streams use calibrated cameras; only the raw RGB
 and depth video streams are stored in the dataset,
-Section \[postprocessing\] discusses how to reconstruct from them
-calibrated streams and 3D point clouds.
 
   **Domain**       **Type**                 **Details**
   ---------------- ------------------------ -----------------------------------------
