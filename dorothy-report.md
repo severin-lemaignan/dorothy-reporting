@@ -8,41 +8,68 @@ The DoRoThy project is set in the frame of the FET proactive theme
 1.1 Objectives
 --------------
 
+### 1.1.1 Summary of the context and overall objectives of the project 
 
-The central foreseen impact of DoRoThy was to promote and further
-develop the *European leadership in cognitive robotics as well as
-natural human-robot interaction* (Section 3.1 of Annex 1). While the
-detailed work carried out over the course of the project has
-significantly deviated from the original proposed plan (see Section 5
-below), DoRoThy has achieved this high-level goal, by effectively laying
-the ground for a novel research paradigm for cognitive robotics and
-human-robot interaction: deep-learning of social interaction.
+Human social dynamics rely upon the ability to effectively attribute beliefs,
+goals and percepts to other people. This lays at the core of human interactions:
+normal human social interactions depend upon the recognition of other sensory
+perspectives, the understanding of other mental states, and the recognition of
+complex non-verbal cues of attention and emotional state.
 
-In the scientific summary of the DoRoThy project, we underlined how
+With the rapid development of social robotics, meaning robots that interact with
+humans in usual human environments like homes, transferring these cognitive
+skills to robots is an important, if difficult, scientific challenge, with a significant
+societal impact with regard to our future interactions with robots. This
+scientific endeavour is explicitly set as one of the EU priorities within the
+Horizon 2020 framework, which emphasizes the need to endow artificial systems
+with new cognitive capabilities, beyond "repetitive problem solving"[^4].
+
+
+In this context, the DoRoThy project aims first at advancing our **understanding
+of the complex socio-cognitive mechanisms that underpin human social
+interactions**, and, second, to investigate **how such mechanisms could by
+applied to social robots**.
+
+The project has originally a strong emphasise on *mutual modelling*: endowing
+artificial agents with skills to "read the minds" of others.
+In effect, in the scientific summary of the DoRoThy project, we underlined how
 humans exhibit powerful mechanisms to *represent* and *interpret* what
 others know or intend. DoRoThy originally proposed to build on a
 *symbolic cognition* paradigm to endow robots with similar social
-skills. After an initial period of 6-8 months of prototyping,
-experimentation and intense academic discussions with other senior
-academics at the host institution (namely Paul Baxter and Tony
-Belpaeme), we came to the conclusion that a shift of paradigm was
-required if the project was to have a significant impact on the field.
-Therefore, we decided to shift from *symbolic cognition* and
-traditional, logic-based AI techniques, to the potentially disruptive
-deep learning techniques.
+skills.
 
-Because of this change, the work packages have been modified, as
+After an initial period of 6 to 8 months of prototyping, experimentation and
+consultation with other senior academics at the host institution (see report on
+[WP1](#wp1) and [WP2](#wp2)), we came to the conclusion that a shift of paradigm
+was required if the project was to have a significant impact on the field.
+
+Therefore, the researcher decided to shift his modelling paradigm from *symbolic
+cognition* and traditional, logic-based AI techniques, to the **potentially
+disruptive deep learning techniques**.
+
+
+
+
+
+
+To better reflect this change, the titles of work packages have been modified, as
 indicated below.
 
 - Work Package 1: *Formal Model of Representation-level Meta-Cognition for Robots* becomes *Models of social cognition for human-robot interaction*;
-- Work package 2: *Experiment 1: Standard False-Belief Experiment* becomes *Experimental Framework for the Study of Social HRI*;
+- Work package 2: *Experiment 1: Standard False-Belief Experiment* becomes *Experimental Frameworks for the Study of Social HRI*;
 - Work package 3: *Experiment 2: Representation-level Meta-Cognition* becomes *The PInSoRo dataset of Social HRI*;
 - Work package 4 is not modified.
+
+[^4]: In description of the FET Proactive "Knowing, doing and being: cognition
+  beyond problem solving", retrieved on 25/08/14 from
+  https://ec.europa.eu/programmes/horizon2020/en/node/822.
+
+
 
 1.2 Explanation of the work carried per WP
 ------------------------------------------
 
-### WP1: *Models of social cognition for human-robot interaction*
+### WP1: *Models of social cognition for human-robot interaction* {#wp1}
 
 The objective of this work package was to design a formal, logic-based,
 model of theory of mind. **This work package has evolved to investigate a broader
@@ -69,7 +96,7 @@ In this section, we report on the work conducted by the researcher to:
 | D1.2: Formal model of experiment 1 and 2 | *(no longer applicable, replaced by D1.4)*  |
 | D1.3: Publication of an experimental methodology to investigate models of social interaction | Publication submitted at HRI2018, under review: [@lemaignan2018freeplay]   |
 
-Additional deliverables
+Additional deliverables, not present in the original project:
 
 | | |
 |------------------------------------------------------|---------------------------------------------|
@@ -169,16 +196,16 @@ and such tasks that effectively test a single cognitive skill (in this
 case, mentalizing) in near isolation are of high relevance for
 experimental social robotics.
 
-  No mentalizing required             Mentalizing required
+  **No mentalizing required**         **Mentalizing required**
   ----------------------------------- ------------------------------------------------------
-  Ordering behavioural pictures       Ordering mentalistic pictures [@baron1986mechanical]
-  Understanding see                   Understanding know [@perner1989exploration]
-  Protoimperative pointing            Protodeclarative pointing [@baron1989perceptual]
-  Sabotage                            Deception [@sodian1992deception]
-  False photographs                   False beliefs [@leslie1992domain]
-  Recognizing happiness and sadness   Recognizing surprise [@baron1993children]
-  Object occlusion                    Information occlusion [@baron1992out]
-  Literal expression                  Metaphorical expression [@happe1993communicative]
+  Ordering behavioural pictures       Ordering mentalistic pictures [@baron1986mechanical]
+  Understanding see                   Understanding know [@perner1989exploration]
+  Protoimperative pointing            Protodeclarative pointing [@baron1989perceptual]
+  Sabotage                            Deception [@sodian1992deception]
+  False photographs                   False beliefs [@leslie1992domain]
+  Recognizing happiness and sadness   Recognizing surprise [@baron1993children]
+  Object occlusion                    Information occlusion [@baron1992out]
+  Literal expression                  Metaphorical expression [@happe1993communicative]
 
   : Tasks requiring or not mentalizing to pass, listed by Frith and
   Happé in [@frith1994autism][]{data-label="mentalizing-tasks"}
@@ -779,7 +806,7 @@ easy deployment, short enough experimental sessions to allow for large
 groups of participants).
 
 In the frame of the DoRoThy project, the researcher has developed such a novel
-social sitation, presented in WP2.
+social sitation, presented in [WP2](#wp2).
 
 ##### Social play
 
@@ -841,51 +868,109 @@ human-robot social interactions.
 <!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
 <!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
 
+### WP2: *Experimental Frameworks for the Study of Social HRI* {#wp2}
 
-### WP2: *Experimental framework: the free play sandbox*
+The original objective of this work package was to develop the required software
+to reproduce the standard *false-belief* task (*Sally and Anne* task) on the Nao
+robot.
+
+The work package has evolved: following initial investigations (reported here
+after), the researcher has focused his investigations on the **design of a novel
+experimental framework to investigate social interactions**, both for
+human-human interactions, and human-robot interactions.
 
 
-#### Underworlds
+In this section, we report on the work conducted by the researcher to:
 
-[[underworlds]{}]{} is a distributed and lightweight open-source
-framework [^3] that enables robot programmers to build and refine
-spatial and temporal models of the environment surrounding a robot in
-real-time. [[underworlds]{}]{} makes it possible to share these world
-models amongst the software components running on the robot.
-Additionally, [[underworlds]{}]{} enables users to represent and
-manipulate *multiple alternatives* to the current, perceived world model
-in a distributed manner. For instance, the world with some objects
-filtered out; the world ‘viewed’ from the perspective of another agent;
-a hypothetical world resulting from the simulated application of a plan,
-etc.
+1. develop new hardware and software to endow the Nao robot with depth vision
+   and accurate gaze tracking (task T2.2);
+2. develop a situation assessment tool to perform geometric reasoning
+   and compute visual perspectives (task T2.3);
+3. design and implement a novel methodology to investigate social interactions,
+   well suited for deep-learning applications (includes task T2.2)
 
-![Schema of a possible [[underworlds]{}]{} network: eight *clients*
+Additional work, including 2 experiments (D2.7 and D2.8), have been carried by
+the researcher. Refer to the list of additional deliverables below.
+
+
+Note that task T2.1 (*adapt `oro` knowledge base to Nao*) and task T2.4 (*run
+the experiment*) are no longer relevant, following the project's refocus.
+
+**Summary of the deliverables**
+
+| | |
+|------------------------------------------------------|---------------------------------------------|
+| D2.1: Open-source software for sitation assessment | The `underworlds` software project, publication submitted at HRI2018, under review: [@lemaignan2018underworlds] |
+| D2.2: Experiment 1 | *(no longer applicable, replaced by [WP3](#wp3)*  |
+| D2.3: Publication of experiment 1 results | *(no longer applicable, replaced by [WP3](#wp3)*  |
+
+Additional deliverables, not present in the original project:
+
+| | |
+|------|-------------------------------------------------------------|
+| D2.4 | Open-source hardware to provide Nao with RGB-D vision |
+| D2.5 | Organisation of a workshop on attention tracking during the 2016 HRI Summer School |
+| D2.6 | Publication of an robotic software architecture that take into account human perspectives [@lemaignan2016artificial] |
+| D2.7 | Novel experimental methodology to investigate natural social interaction (source code available; publication under review: [@lemaignan2018freeplay]) |
+| D2.8 | Experiment to assess the quality of speech recognition on Nao [@kennedy2017child] |
+| D2.9 | Experiment to assess the social presence of humanoid robots (publication under review: [@irfan2018social]) |
+
+
+
+
+#### Situation Assessment for the Nao robot
+
+As sketched in [@lemaignan2015mutual] and [@lemaignan2016artificial], endowing
+robots with *visual perspective taking* abilities is a pre-requisite to build
+further, more advanced, models of others' mental state.
+
+In the frame of DoRoThy, the researcher has developped a novel software
+framework for geometric reasoning and situation assessment that introduce a new
+concept of *cascading worlds*. This open-source framework is called
+[Underworlds](#underworlds) (task T2.3, deliverable D2.1).
+
+Besides, to make it usable on a Nao robot, the researcher designed and made
+publicly available a 'hat' for Nao, embedding a RGB-D camera.
+
+##### Underworlds
+
+`underworlds` ([@lemaignan2018underworlds], under review) is a distributed and
+lightweight open-source framework [^3] that enables robot programmers to build
+and refine spatial and temporal models of the environment surrounding a robot in
+real-time. `underworlds` makes it possible to share these world models amongst
+the software components running on the robot.  Additionally, `underworlds`
+enables users to represent and manipulate *multiple alternatives* to the
+current, perceived world model in a distributed manner. For instance, the world
+with some objects filtered out; the world ‘viewed’ from the perspective of
+another agent; a hypothetical world resulting from the simulated application of
+a plan, etc.
+
+![Schema of a possible `underworlds` network: eight *clients*
 (user-written & architecture specific; in blue) are sharing environment
 models through four independent *worlds* (made from joint spatial and
 temporal models). This architecture enables successive and modular
 refinement of the models (*cascading* situation assessment), effectively
 adapted to each client’s needs. *Dashed yellow nodes represent other
 possible components in the system that do not interact directly with the
-[[underworlds]{}]{} network*.[]{data-label="fig|scene"}](figs/underworlds-overview.pdf){width="\linewidth"}
+`underworlds` network*.](figs/underworlds-overview.png){#fig:scene width=80%
+height=60%}
 
 
-[^3]: See [Annex 6.2](#annex62) for the source code repository
+[^3]: See [appendices](#annex62) for the source code repository.
 
-##### Cascading architecture
 
-Figure \[fig|scene\] pictures a typical [[underworlds]{}]{} topology: a
+@fig:scene pictures a typical `underworlds` topology: a
 graph (that happens to be a directed acyclic graph on
-Figure \[fig|scene\], but does not have to be in the general case –
+@fig:scene, but does not have to be in the general case –
 cycles are permitted) of *clients* connected through shared data
 structures called *worlds*.
 
 ###### Clients
 
-Software components accessing [[underworlds]{}]{} worlds are called
+Software components accessing `underworlds` worlds are called
 clients. Some standard clients (like a 3D visualisation tool) are
-provided with the [[underworlds]{}]{} package (see
-section \[std\_clients\]). Clients are otherwise written by the end
-users using the [[underworlds]{}]{} client API (see section \[api\]).
+provided with the `underworlds` package. Clients are otherwise written by the end
+users using the `underworlds` client API.
 
 Clients can both read and write onto the worlds they are connected to,
 and automatically see updates broadcast by other clients connected to
@@ -893,14 +978,14 @@ the same world.
 
 Four specific types of clients can be distinguished: **root clients**
 which create and update worlds (‘write-only’ client, like the *Sensor
-fusion* and *ROS interface* clients in Figure \[fig|scene\]); **leaf
+fusion* and *ROS interface* clients in @fig:scene); **leaf
 clients** which on the contrary only read worlds, without modifying them
 (like the *Computation of spatial relations* client on
-Figure \[fig|scene\]); **filters** that copy an input world into an
+@fig:scene); **filters** that copy an input world into an
 output world, performing some filtering operation in-between (like the
 client *Physics-based position correction*); and **transformers** which
 transform one representation into another (like the *Semantic mapping*
-client on Figure \[fig|scene\]).
+client on @fig:scene).
 
 ###### Worlds
 
@@ -911,11 +996,11 @@ storing temporal events.
 Each world is technically independent from all others. Dependencies
 between worlds arise from the clients’ connections. For instance,
 filters effectively create a dependency between worlds. On
-Figure \[fig|scene\], the *Physics-based position correction* client
-creates a dependency between the world [base]{} (which represents here
-the result of raw sensor fusion) and the world [corrected]{} which would
-be a physically-consistent copy of [base]{}. As a result, an
-[[underworlds]{}]{} network can be seen as a dependency graph between
+@fig:scene, the *Physics-based position correction* client
+creates a dependency between the world `base` (which represents here
+the result of raw sensor fusion) and the world `corrected` which would
+be a physically-consistent copy of `base`. As a result, an
+`underworlds` network can be seen as a dependency graph between
 worlds (where cyclic dependencies are permissible).
 
 This architecture enables what we call *cascading situation assessment*:
@@ -929,21 +1014,19 @@ Worlds contain both a geometric model and a temporal model. The
 geometric model is represented as a scene graph. The scene graph has a
 unique root node, to which a tree of other nodes is parented.
 
-Nodes in an [[underworlds]{}]{} scene graph have four possible types:
+Nodes in an `underworlds` scene graph have four possible types:
 **objects** that represent concrete physical objects (typically with one
 or several associated 3D meshes); **entities** that represent abstract
 entities like reference frames or groups of objects; **perspectives**
 that represent viewpoints of the scene (like cameras or human gaze); and
 **fields** that represent scalar or vector fields (like the visibility
-of an object, the working space of robot, [etc.]{}– note that fields are
-not yet implemented in the current version of [[underworlds]{}]{} , see
-section \[futurework\]).
+of an object, the working space of robot, etc.
 
 Every node has a unique ID, a parent, a 3D transformation relative to
 the parent and an optional name. *Object* nodes optionally store as well
 pointers to their associated meshes. Importantly, mesh data (or other
 geometric datasets like point clouds) are *not* stored within the nodes
-themselves. [[underworlds]{}]{} represents geometric data as immutable
+themselves. `underworlds` represents geometric data as immutable
 data, identified by their hash value (preventing *de facto* data
 duplication). Nodes only store the hash corresponding to the desired
 geometric data, and the actual data is pulled from the server by the
@@ -955,25 +1038,25 @@ Complementing the spatial representation encapsulated in the scene
 graph, each world also stores the world’s *timeline*. This data
 structure is shared and synchronised amongst the clients in the same way
 as the scene graph. Clients can record both *events* (duration-less
-states) and *situations* in the timeline, [i.e.,]{}states with a start
+states) and *situations* in the timeline, i.e., states with a start
 time and a (possibly open-ended) end time.
 
-Importantly, the [[underworlds]{}]{} server automatically generates a
+Importantly, the `underworlds` server automatically generates a
 snapshot of the scene graph whenever an event or situation is added to
 the timeline. The snapshot is associated to the event, which allows
 clients to effectively retrieve past states of the world. This
 capability is anticipated to be primarily used by
-[[underworlds]{}]{} clients performing action recognition.
+`underworlds` clients performing action recognition.
 
 ![Screenshot of the [uwds view]{} 3D visualisation and manipulation
 client. In this particular example, the 3D meshes have been pre-loaded
 using [uwds load]{}. Their positions are then updated at run-time using
 the robot’s sensors and proprioception (joint
-state).[]{data-label="fig|uwds-view"}](figs/uwds-screenshot.png){width="\linewidth"}
+state).[]{data-label="fig|uwds-view"}](figs/uwds-screenshot.png){#fig:uwds-view width="\linewidth"}
 
-##### Distributed spatio-temporal models {#arch}
+###### Distributed spatio-temporal models {#arch}
 
-[[underworlds]{}]{} is not a monolithic piece of software. Instead, it
+`underworlds` is not a monolithic piece of software. Instead, it
 stands for both a *network of interconnected clients* which manipulate
 spatial and temporal models of the robot environment (for instance, a
 motion planner, a object detection module, a human skeleton tracker,
@@ -989,59 +1072,58 @@ to the same world. As previously mentioned, worlds are composite data
 structures comprised of a scene graph and a timeline. These data
 structures are synchronised using Google’s gRPC message passing
 framework[^2], ensuring high throughput, reliability and
-cross-platform/cross-language support. The [[underworlds]{}]{} API is
-specifically discussed hereafter, in section \[api\].
+cross-platform/cross-language support.
 
-[[underworlds]{}]{} is meant to broadcast complex environment
+`underworlds` is meant to broadcast complex environment
 representations (typically including large geometric datasets, like
-meshes) in real-time. [[underworlds]{}]{} itself does not perform many
+meshes) in real-time. `underworlds` itself does not perform many
 CPU intensive tasks (CPU intensive processing tasks – sensor fusion,
-physics simulation, [etc.]{}– are performed by the clients themselves)
+physics simulation, etc. – are performed by the clients themselves)
 and as such, the performance bottleneck is essentially the network’s
 data throughput. In that regard, one of the simple yet critical
-optimisations performed by [[underworlds]{}]{} is automatic caching of
+optimisations performed by `underworlds` is automatic caching of
 mesh data. Mesh data are not transmitted when nodes are updated; only a
 hash value of the mesh data. The client can then request the full data
 whenever it is actually needed.
 
-##### Spatial Reasoning and Perspective Taking
+###### Spatial Reasoning and Perspective Taking
 
 Spatial reasoning [@OKeefe1999] is a field in its own right, and has
 been used for natural language processing for applications such as
 direction recognition [@Kollar2010; @Matuszek2010] or language
 grounding [@Tellex2010]. Other examples in human-robot interaction
-include Ros [et al.]{} [@ros2010solving; @ros2010which] which has
+include Ros et al. [@ros2010solving; @ros2010which] which has
 recently been integrated into a full architecture for autonomous
 human-robot interaction [@lemaignan2016artificial].
 
-![The [spatial\_relations]{} client computes perspective-aware spatial
+![The `spatial_relations` client computes perspective-aware spatial
 relations between objects and agents: *allo-centric* relations (like [is
 in]{} or [is on]{}) are independent of the viewpoint, while
 *ego-centric* relations ([in front of]{}, [left of]{}) depend on the
 viewer
-perspective.[]{data-label="fig|spatialrelations"}](figs/spatialrelations.png){width="\linewidth"}
+perspective.](figs/spatialrelations.png){#fig:spatialrelations width=100%}
 
-[[underworlds]{}]{}provides a client ([spatial\_relations]{}) to compute
-both allo-centric and ego-centric ([i.e.,]{}viewer-dependent) spatial
-relations between objects (Figure \[fig|spatialrelations\]).
+`underworlds` provides a client (`spatial_relations`) to compute
+both allo-centric and ego-centric (i.e., viewer-dependent) spatial
+relations between objects (Figure @fig:spatialrelations).
 
-[[underworlds]{}]{}also implements an efficient algorithm to assess
-object visibility from a specific viewpoint ([i.e.,]{}from a given
+`underworlds` also implements an efficient algorithm to assess
+object visibility from a specific viewpoint (i.e., from a given
 *perspective* node). The algorithm (color picking) enables fast (single
 pass) computation of the visibility of every object in the scene, while
 providing control regarding how many pixels should be actually visible
 for the object to be considered globally visible. The command-line tool
-[uwds visibility]{} returns the list of visible objects from the point
-of view of each camera in a given world, and [[underworlds]{}]{}also
+`uwds visibility` returns the list of visible objects from the point
+of view of each camera in a given world, and `underworlds` also
 provides the helper class [VisibilityMonitor]{} to programmatically
 access visibility information.
 
 When integrated into a filter node, visibility computation allows easy
 creation of new worlds representing the estimated perspectives of the
-different agents. Listing \[lst|humanperspective\] provides the complete
-code of such an [[underworlds]{}]{}client.
+different agents. @lst:humanperspective provides the complete
+code of such an `underworlds` client.
 
-```python
+```{#lst:humanperspective .python}
 import copy
 import underworlds
 from underworlds.tools.visibility import VisibilityMonitor
@@ -1083,25 +1165,42 @@ with underworlds.Context("Human PoV") as ctx:
         source.scene.waitforchanges()
 ```
 
-##### Application example
+  : Example of use of `underworlds` to extract the visual perspective of one human
 
-[[underworlds]{}]{} has been used within the H2020 L2TOR
-project in order to conceptualise and visualise the spatial relations
-and visibility of the physical objects that participants interact with.
-In one of the scenarios of this project, participants are instructed by
-a NAO robot to manipulate a number of Duplo-like animals on top of a
-printed background paper which serves as a landscape
-(Figure \[fig|l2torexample\]). The robot instructions are based on
+###### Application to the L2TOR H2020 project
+
+Due to the change of focus of the project, `underworlds` has not been
+directly put to use in the frame of DoRoThy.
+
+However, `underworlds` has been used within the H2020 L2TOR project (led by the
+host institution) in order to conceptualise and visualise the spatial relations
+and visibility of the physical objects that participants interact with.  In one
+of the scenarios of this project, participants are instructed by a NAO robot to
+manipulate a number of Duplo-like animals on top of a printed background paper
+which serves as a landscape (@fig:l2tor). The robot instructions are based on
 pedagogical strategies to promote spatial relation learning by object
-manipulation. Such instructions include commands to place the elephant
-*on top* or *next to* the cube, or put the giraffe *inside* the house.
-To assess the performance, the robot and the operator need to compute
-spatial relationships between objects from the visual perspective of the
-participant.
+manipulation. Such instructions include commands to place the elephant *on top*
+or *next to* the cube, or put the giraffe *inside* the house.  To assess the
+performance, the robot and the operator need to compute spatial relationships
+between objects from the visual perspective of the participant.
 
 
-![Schema of the [[underworlds]{}]{} architecture used in the H2020 L2TOR project.
-[]{data-label="fig|l2torarchitecture"}](figs/l2tor.pdf){width="0.9\linewidth"}
+![Schema of the underworlds architecture used in the H2020 L2TOR project](figs/l2tor.pdf){#fig:l2tor height=300px}
+
+
+##### RGB-D vision for the Nao robot
+
+Because the typical sensory input required to feed in `underworlds` worlds
+(3D map of the environment and humans) require a RGB-D camera, not available on
+the Nao robot, the researcher designed and build a 'hat' for the robot, able to
+embed a 3D Intel Realsense F200 (or SR300) camera (@fig:magic-hat).
+
+![3D printed hat, design to hold a RGB-D camera on the head of a Nao
+robot](figs/magic-hat.jpg){#fig:magic-hat}
+
+3D models required to 3D print the hat and detailed assembly instruction have
+been made available online: [github.com/severin-lemaignan/nao-magic-hat](https://github.com/severin-lemaignan/nao-magic-hat)
+
 
 
 #### Freeplay sandbox
@@ -1124,15 +1223,15 @@ interactions, and builds on a *sandboxed free-play environment*.
 free-play situation, by drawing and manipulating items on a touchscreen.
 Children are facing each other and sit on cushions. Each child wears a
 bright sports bib, either purple or yellow, to facilitate later
-identification.[]{data-label="fig|freeplay"}](figs/setup_top.svg){width="0.9\columnwidth"}
+identification.](figs/setup_top.svg){#fig:freeplay width="0.9\columnwidth"}
 
-#### Task
+##### Task
 
 We have designed a new experimental task, called the *free-play
 sandbox*, that is based on free play interactions. Pairs of children
 (4-8 years old) are invited to freely draw and interact with items
 displayed on an interactive table, without any explicit goal set by the
-experimenter (Fig. \[fig|freeplay\]). The task is designed so that
+experimenter (@fig:freeplay). The task is designed so that
 children can engage in open-ended and non-directive play, yet it is
 sufficiently constrained to be suitable for recording, and allows the
 reproduction of social behaviour by an artificial agent in comparable
@@ -1142,7 +1241,7 @@ The free-play sandbox follows the sandtray
 paradigm [@baxter2012touchscreen]: a large touchscreen (60cm $\times$
 33cm, with multitouch support) is used as an interactive surface
 (*sandtray*). Two children play together by freely moving interactive
-items on the surface (Fig. \[fig|sandbox\]). A background image depicts
+items on the surface (@fig:sandbox). A background image depicts
 a generic empty environment, with different symbolic colours (water,
 grass, beach, bushes...). By drawing on top of the background picture,
 the children can change the environment to their liking. The players do
@@ -1163,11 +1262,11 @@ Section \[sec:dataset\]).
 ![Example of a possible game situation. Items (animals, characters...)
 can be dragged over the whole play area, while the background picture
 can be painted over by picking a
-colour.[]{data-label="fig|sandbox"}](figs/sandbox.pdf){width="0.9\columnwidth"}
+colour.](figs/sandbox.pdf){#fig:sandbox width="0.9\columnwidth"}
 
-#### Applications {#sec:applications}
+##### Applications {#sec:applications}
 
-##### Child-Child Interaction
+###### Child-Child Interaction
 
 The free-play sandbox provides the opportunity to observe children
 interacting in a natural way in an open but framed setup. As the system
@@ -1182,11 +1281,10 @@ social behaviours expressed by children when interacting in a natural
 environment (might be interesting to add a list here). The compactness
 of the system makes it easy to compare data from different locations.
 
-##### Child-Robot Interaction {#ssec|CRI}
+###### Child-Robot Interaction {#sec:CRI}
 
 This free-play sandbox provides the opportunity to explore child-robot
-interactions in this open, real world environment as shown in Figure
-\[fig|freeplay\].
+interactions in this open, real world environment as shown in @fig:freeplay.
 
 Depending of the focus of the study, two modes of control for the robot
 are available. If the interest is on evaluating a specific robot
@@ -1202,7 +1300,7 @@ tele-operated to interact with a naive partner is called Wizard of Oz
 (WoZ) and is used in numerous studies to explore the psychologic side of
 HRI [@riek2012wizard].
 
-##### Deep Learning
+###### Deep Learning
 
 With the quantity of data logged and the high number of interaction
 achievable with the free-play sandbox, it supports the type of
@@ -1214,7 +1312,7 @@ less compact systems.
 From the information collected on the children, social behaviours can be
 extracted and used on a robot.
 
-#### Implementation {#sec:impl}
+##### Implementation {#sec:impl}
 
 
 The software-side of the free-play sandbox is entirely open-source[^1].
@@ -1225,30 +1323,30 @@ generation pipelines. The graphical interface interacts with the
 decisional pipeline over a bidirectional QML-ROS bridge that we have
 developed for that purpose.
 
-Figure \[fig|architecture\] presents the software architecture of the
+@Fig:freeplay-arch presents the software architecture of the
 sandbox.
 
-![image](figs/freeplay-sandbox-architecture.svg){width="\linewidth"}
+![Software architecture of the freeplay sandbox](figs/freeplay-sandbox-architecture.svg){#fig:freeplay-arch width=80%}
 
 ![The free-play sandbox, viewed at runtime within ROS RViz. Simple
 computer vision is used to segment the background drawings into zones
 (visible on the right panel). The poses and bounding boxes of the
 interactive items are published as well, and turned into an occupancy
 map, used to plan the robot’s arm
-motion.[]{data-label="fig|rviz"}](figs/rviz-sandtray.png){width="\linewidth"}
+motion.](figs/rviz-sandtray.png){#fig:rviz-sandtray width=80%}
 
-##### Interactive game
+###### Interactive game
 
-The interactive game (Fig. \[fig|architecture\].1) is coded using QML,
+The interactive game (@fig:freeplay-arch (1)) is coded using QML,
 and displays a main background image on top of which items (animals,
 humans and objects) can be moved. The children can also use a drawing
 mode to create coloured strokes on a layer between the background and
 the items, which adds another layer of unconstrained interaction to the
-game (Figure \[fig|sandbox\]). The game exposes the image of the
+game (@fig:rviz-sandtray). The game exposes the image of the
 background, the drawings, and the positions of the objects as ROS TF
 frames.
 
-##### Sensing
+###### Sensing
 
 Two Intel RealSense SR300 RGB-D cameras are mounted at fixed positions
 on the sandtray frame, with custom designed 3D-printed brackets that
@@ -1258,50 +1356,48 @@ accurate geometric transformations with respect to the sandtray screen
 are known. Combined with hardware calibration, it allows for accurate
 localisation of the children and in particular, children’s faces. In
 addition to the images, both cameras can perform stereo audio recording.
-One ROS node per camera (Fig. \[fig|architecture\].2) publishes on
+One ROS node per camera (@fig:freeplay-arch (2)) publishes on
 dedicated topics the audio and video streams.
 
 A third ‘external’ (and non-calibrated) camera is usually used as well
 to record the environment of the experiment with a wider angle
-(*environment camera* in Figure \[fig|freeplay\]).
+(*environment camera* in @fig:freeplay).
 
-##### Robot Control
+###### Robot Control
 
-As stated in section \[ssec|CRI\], a robot (Fig. \[fig|architecture\].9)
+As previously stated, a robot (@fig:freeplay-arch (9))
 can act as play partner instead of one of the children. This robot can
 either be autonomous selecting actions based on the inputs provided by
 the sensors and the game or be controlled by a human in a Wizard of Oz
 fashion.
 
-###### Autonomous
-
 The current implementation exposes a large number of information on the
 game and the state of the child that can be used in the robot
 controller. The position of every item is exposed as a TF frame, the
 background is segmented in zones of identical colors
-(Fig. \[fig|architecture\].5), social element of the state the
+(@fig:freeplay-arch (5)), social element of the state the
 interaction are collected through the RGBD camera and the microphone
-facing the child. As visible on Figures \[fig|freeplay\]
-and \[fig|rviz\], the camera covers the head of the child as well as
+facing the child. As visible on @fig:freeplay
+and @fig:freeplay-rviz, the camera covers the head of the child as well as
 most of the upperbody, and applying libraries such as DLib and OpenPose,
 the position of facial feature and skeleton of the child are extracted
 and can be used to obtain: head gaze, gaze and gestures such as
 pointing. All these inputs can be combined to provide the robot with
 more social inputs to test the sociability of a robotic controller
-(Fig. \[fig|architecture\].3) and its impact on the interaction.
+(@fig:freeplay-arch (3)) and its impact on the interaction.
 
 The robot’s location is obtained by displaying fiducial markers on the
 touchscreen before the start of the interaction, so the transformation
 between the robot coordinate system and the touchscreen is known
-(Fig. \[fig|architecture\].13). And this robot location can also be used
+(@fig:freeplay-arch (13)). And this robot location can also be used
 to identify gazes from the child to the robot.
 
 To make the children believe the robot is moving objects on the
 touchscreen, we synchronise a moving pointing gesture of the robot
-(Fig. \[fig|architecture\].4) and a series of fake touches
-(Fig. \[fig|architecture\].8) appied on the screen, moving the desired
+(@fig:freeplay-arch (4)) and a series of fake touches
+(@fig:freeplay-arch (8)) applied on the screen, moving the desired
 object. Once an object and a goal position have been selected, a planner
-(Fig. \[fig|architecture\].6) generate a path for this image using the A
+(@fig:freeplay-arch (6)) generate a path for this image using the A
 algorithm on an occupancy map obtained with the items footprints, then
 this plan is sent to a nodes synchronising the actuation on the robot
 and the fake touches on the game.
@@ -1309,33 +1405,23 @@ and the fake touches on the game.
 Other actions such as gaze, pointing or speech are also exposed as
 simple ROS topics.
 
-###### Wizard-of-Oz
-
-To allow an experimenter to control the robot, a GUI to control the
-robot (Fig. \[fig|architecture\].11) is provided and presents an
-identical representation of the state of the game on an other
-application which can be used on a tablet for example. The wizard can
-drag the objects in a similar fashion as what the child would do on the
-Sandtray, and on the release, the robot executes the dragging motion on
-the Sandtray, moving an object to a new location. The source code can be
-easily modified to add new specific buttons to execute other actions,
-such as having the robot talk to the child.
-
 ##### Experiment Manager
 
-We have developed as well a dedicated, web-based, interface can be used
+The researcher has developed as well a dedicated, web-based, interface can be used
 by the experimenter to manage the whole experiment and data acquisition
-procedure (Fig. \[fig|architecture\].10). This interface ensures that
+procedure (@fig:supervisor). This interface ensures that
 all the required software nodes are running, allow the experimenter to
 check the status and, if needed, to start/stop/restart any of them. It
 also help managing large data collection campaigns by providing a
 convenient web interface (usually used by the experimenter on a tablet)
 to record the demographics, resetting the game interface after each
 session, and automatically enforcing the acquisition protocol (see
-Table \[tab|protocol\]).
+@tbl:protocol).
+
+![Experimenter interface, using web-based technologies](figs/supervisor.png){#fig:supervisor width=40%}
 
 This interface has been extensively used to acquire the dataset that we
-present at Section \[sec:dataset\].
+present in the [next section](#wp3).
 
 
 
@@ -1343,11 +1429,46 @@ present at Section \[sec:dataset\].
 <!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
 <!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
 
-### WP3: *The PInSoRo dataset*
+### WP3: *The PInSoRo dataset* {#wp3}
+
+This work package includes the work carried out by the researcher to build a
+large dataset of natural human-human and human-robot social interaction, to be
+used for data mining and machine learning applications.
+
+This work package replaces the original one (which was entitled *Experiment 2:
+Representation-level Meta-Cognition*).
+
+In this section, we report on the work conducted by the researcher to:
+
+1. develop new hardware and software to endow the Nao robot with depth vision
+   and accurate gaze tracking (task T2.2);
+2. develop a situation assessment tool to perform geometric reasoning
+   and compute visual perspectives (task T2.3);
+3. design and implement a novel methodology to investigate social interactions,
+   well suited for deep-learning applications (includes task T2.2)
+
+Additional work, including 2 experiments (D2.6 and D2.7), have been carried by
+the researcher. Refer to the list of additional deliverables below.
 
 
-#### Context: machine Learning as the next horizon for social robots
+Note that task T2.1 (*adapt `oro` knowledge base to Nao*) and task T2.4 (*run
+the experiment*) are no longer relevant, following the project's refocus.
 
+**Summary of the deliverables**
+
+*The original deliverables D3.1 -- D3.4 are no longer applicable.*
+
+Deliverables not present in the original project:
+
+| | |
+|------|-------------------------------------------------------------|
+| D3.5 | New coding scheme to enable multi-dimensional analysis of social interactions |
+| D3.6 | Large open-data dataset of child-child and child-robot interactions |
+| D3.7 | Website to publicise and make broadly available the dataset: [freeplay-sandbox.github.io]{https://freeplay-sandbox.github.io/} |
+
+
+
+#### Context: machine learning and social robots
 
 The broad family of deep neural networks have repeatedly made the
 headlines in the last few years with reports of impressive
@@ -1405,7 +1526,7 @@ generation of brief, autonomous behaviours, including social
 gestures [@nagai2005learning] and gazing
 behaviours [@calinon2006teaching].
 
-Based on a human-human interaction dataset, Liu [et al.]{} [@liu2014how]
+Based on a human-human interaction dataset, Liu et al.  [@liu2014how]
 have investigated machine learning approaches to learn longer
 interaction sequences. Using unsupervised learning, they train a robot
 to act as a shop-keeper, generating both speech and socially acceptable
@@ -1452,231 +1573,9 @@ minutes) of free-play interaction, capturing a wider range of
 socio-cognitive behaviours.
 
 
-#### Canonical procedures for data collection & analysis
-
-
-
-The section presents *canonical* procedures to acquire data during
-testing, to pre-process it, and analyse it. We call them *canonical*
-because they are standard procedures, and where relevant, well
-integrated into the software pipeline of the sandbox ([e.g.,]{}ROS
-integration) and represent state-of-the-art techniques. For the specific
-purpose of manually annotating the social interaction, we introduce as
-well a novel coding scheme, resulting from the synthesis of several
-existing techniques (Section \[sec|coding-scheme\] below).
-
-However, these procedure are not normative. Researchers interested in
-reusing the free-play sandbox task for their own research would
-naturally adapt and extend these protocols to their own needs. Besides,
-certain aspects (most notably, the audio processing) are yet to be
-properly investigated.
-
-#### Protocol
-
-We typically adhere to the acquisition procedure described in
-Table \[tab|protocol\] with all participants. To ease later
-identification, each child is also given a different and brightly
-coloured sports bib to wear.
-
-Importantly, during the *Greetings* stage, we show the robot both moving
-and speaking (for instance, “Hello, I’m Nao. Today I’ll be playing with
-you. Exciting!” while waving at the children). This is meant to set the
-children’s expectations: they have seen that the robot can speak, move,
-and even behave in a social way.
-
-Also, the game interface of the free-play sandbox offers a tutorial
-mode, used to ensure the children know how to manipulate items on a
-touchscreen and draw. In our experience, this has never been an issue
-for children.
-
-  ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  **Greetings** *(about 5 min)*\
-  [    ]{}explain the purpose of the study: showing robots how children play\
-  [    ]{}briefly present a Nao robot: the robot stands up, gives a short message, and sits down.\
-  [    ]{}place children on cushions\
-  [    ]{}complete demographics on the tablet\
-  [    ]{}remind the children that they can withdraw at anytime\
-  **Tutorial** *(1-2 min)*\
-  explain how to interact with the game, ensure the children are confident with the manipulation/drawing\
-  **Free-play task** (up to 40 min)\
-  [    ]{}initial prompt: *“Just to remind you, you can use the animals or draw. Whatever you like. If you run out of ideas, there’s also an ideas box. For example, the first one is a zoo. You could draw a zoo or tell a story. When you get bored or don’t want to play anymore, just let me know.”*\
-  [    ]{}let children play\
-  [    ]{}once they wish to stop, stop recording\
-  **Debriefing** *(about 2 min)*\
-  [    ]{}answer possible questions from the children\
-  [    ]{}give small reward ([e.g.,]{}stickers) as a thank you\
-  ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-
-  : Data acquisition protocol[]{data-label="tab|protocol"}
-
-#### Data collection
-
-Table \[table|datastreams\] lists the datastreams that are collected
-during the game. By relying on ROS for the data acquisition (and in
-particular the `rosbag` tool), we ensure all the $\approx$ 10 streams are
-synchronised, timestamped, and, where appropriate, come with calibration
-information (for the cameras mainly). In our experiments, cameras were
-configured to stream in qHD resolution (960$\times$540 pixels) in an
-attempt to balance high enough resolution with tractable file size. It
-results in *bag* files weighting $\approx$1GB per minute.
-
-In our own experiments, all the data (including up to 5 simultaneous
-video streams) was recorded on a single computer (quad core i7-3770T,
-8GB RAM) equipped with a fast 4TB SSD drive. This computer was also
-running the game interface on its touch-enabled screen (sandtray),
-making the whole system compact and easy to deploy (one single device).
-
-  ---------------------------------------------- --
-  **Domain** & **Type**\                             
-  children & audio\                              
-  & face (RGB + depth)\                          
-  robot & full 3D pose\                          
-  environment & RGB\                             
-  touchscreen & background drawing (RGB)\        
-  & touches\                                     
-  & position and orientation of in-game items\   
-  \                                              
-  \                                              
-  ---------------------------------------------- --
-
-  : List of datastreams typically recorded. Each datastream is
-  timestamped with a synchronised clock to facilitate later
-  analysis.[]{data-label="table|datastreams"}
-
-#### Data processing
-
-##### Face and body pose analysis
-
-Off-line post-processing can be done on the images obtained from the
-cameras. We rely on the CMU OpenPose library [@cao2017realtime] to
-extract for both children the upper-body skeleton, 70 facial landmarks
-including the pupil position, as well as the hands’ skeleton (when
-visible).
-
-Further processing is possible: As the position of the camera, a
-potential robot and any object on the game is known, this landmarks can
-be mapped to high level behaviours such as pointing or looking at an
-object. Additional analysis can be done on the facial landmarks to other
-social states, such as main emotion felt by the child.
-
-##### Audio processing
-
-Similar processing can be applied on the audio stream. Library such as
-OpenSMILE provide audio features such as pitch and loudness contour,
-which inform on the general state of the child.
-
-As of today, no reliable speech recognition engine exists for
-children [@kennedy2017child], but in the future, the audio should
-provide textual information on the requests and comments produced by the
-child.
-
-##### Game interactions analysis
-
-Game features are also produced by the different nodes involved in the
-analysis of the game. The Playground segmentation produce a map of the
-regions based on the colour which can be used with the positions of the
-animal to identify from which zone to which zone an animal has been
-moved. The relative position of animal can also indicate if two animals
-have been moved closer. These relations and the drawing inform on what
-high level action the child is doing and can be used to infer the
-child’s goal or desire.
-
-#### Annotation of Social interactions {#sec|coding-scheme}
-
-Annotating social interaction beyond surface behaviours is generally
-difficult. The observable, surface behaviours typically result of a
-superposition of the complex and non-observable underlying cognitive and
-emotional states. As such, these deeper socio-cognitive states can only
-be indirectly observed, and their labelling is typically error prone.
-
-Our aim is to provide insights on the social dynamics, and we have
-synthesised a new coding scheme for social interactions that reuse and
-adapt established social scales. Our coding scheme
-(Figure \[fig|coding-scheme\]) looks specifically at three axis: the
-level of *task engagement* (that distinguishes between *focused*, *task
-oriented* behaviours, and *disengaged* – yet sometimes highly social –
-behaviours); the level of social engagement (reusing Parten’s stages of
-play, but at the micro-task level); the social attitude (that encode
-attitudes like *supportive*, *aggressive*, *dominant*, *annoyed*, etc.)
-
-![The coding scheme used for annotating social interactions occurring
-during free-play episodes. Three main axis are studied: task engagement,
-social engagement and social
-attitude.[]{data-label="fig|coding-scheme"}](figs/coding-scheme.svg){width="\columnwidth"}
-
-##### Task engagement
-
-The first axis of our coding scheme aims at making a broad distinction
-between ‘on-task’ behaviours (even tough the free-play sandbox does not
-explicitly require the children to perform a specific task, they are
-still engaged in an underlying task: to play with the game) and
-‘off-task’ behaviours. We call ‘on-task’ behaviours *goal oriented*:
-they encompass considered, planned actions (that might be social or
-not). *Aimless* behaviours (with respect to the task) encompass opposite
-behaviours: being silly, chatting about unrelated matters, having a good
-laugh, etc. These *Aimless* behaviours are in fact often highly social,
-and play an important role in establishing trust and cooperation between
-the peers. In that sense, they should not be discarded.
-
-##### Social engagement: Parten’s stages of play at micro-level
-
-In our scheme, we characterise *Social engagement* by building upon
-Parten’s stages of play. These 5 stages of play are normally used to
-characterise rather long sequences (at least several minutes) of social
-interactions. Here, we apply them at the level of each of the
-micro-sequences of the interactions: one child is drawing and the other
-is observing is labelled as *solitary play* for the former child,
-*on-looker* behaviour for the later; the two children discuss what to do
-next: this sequence is annotated as a *cooperative* behaviour; etc.
-
-By suggesting such a fine-grained coding of social engagement, we enable
-proper analyses of the internal dynamics of a long sequence of social
-interaction.
-
-##### Social attitude
-
-The constructs related to the social *attitude* of the children derive
-from the *Social Communication Coding System* (SCCS) proposed by
-Olswang [et al.]{}[@olswang2006reliability]. The SCCS consists in 6
-mutually exclusive constructs characterising social communication
-(*hostile*; *pro-social*; *assertive*; *passive*; *adult seeking*;
-*irrelevant*) and were specifically created to characterise children
-communication in a classroom setting.
-
-We transpose these constructs from the communication domain to the
-general behavioural domain, keeping the *pro-social*, *hostile* (whose
-scope we broaden in *adversarial*), *assertive* ([i.e.,]{}dominant), and
-*passive* constructs. In our scheme, the *adult seeking* and
-*irrelevant* constructs belong to Task Engagement axis.
-
-Finally, we have added the construct *Frustrated* to describe children
-who are reluctant or refuse to engage in a specific phase of interaction
-because of a perceived lack of fairness or attention from their peer, or
-because they fail at achieving a particular task (like a drawing).
-
-##### Video coding
-
-The coding is performed post-hoc with the help of a dedicated annotation
-tool (Fig. \[annotator\] which is part of the free-play sandbox toolbox.
-This tool can replay and randomly seek in the three video streams,
-synchronised with the recorded state of the game (including the drawings
-as they are created). An interactive timeline displaying the annotations
-is also displayed.
-
-The annotation tool offers a remote interface for the annotator (made of
-large buttons, and visually similar to Figure \[fig|coding-scheme\])
-that is typically displayed on a tablet and allow the simultaneous
-coding of the behaviours of the two children. Usual video coding
-practices (double-coding of a portion of the dataset and calculation of
-an inter-judge agreement score) would have to be followed.
-
-![Screenshot of the dedicated tool developed for rapid annotation of the
-social
-interactions.[]{data-label="annotator"}](figs/annotator.jpg){width="\linewidth"}
-
 #### Baseline Datasets {#sec:dataset}
 
-We have been using the free-play sandbox task for an initial, large
+We have been using the free-play sandbox task ([WP2](#wp2)) for an initial, large
 scale, data collection over a period of 3 months during Spring 2017.
 
 This campaign aimed at (1) extensively evaluating the task itself (would
@@ -1699,11 +1598,10 @@ records have been acquired ([i.e.]{}50 children), totalling 08h41m of
 recording. At the end of the acquisition campaign (July 2017), the
 dataset is planned to include 50 records. As the children decide
 themselves when to stop, the duration of each play episode varies
-($M=20m51s,
-SD=10m40s$). It is however capped at a maximum of 40 minutes.
+($M=20m51s, SD=10m40s$). It is however capped at a maximum of 40 minutes.
 
 Data is collected using the ROS middleware[^1] and recorded as *bag*
-files. Table \[table|datastreams\] lists all the recorded datastreams.
+files. @Tbl:datastreams lists all the recorded datastreams.
 Every dataframe is timestamped; as the data is recorded using ROS’s bag
 files, it can be replayed in the exact same conditions as it has been
 recorded. All the video streams use calibrated cameras; only the raw RGB
@@ -1711,27 +1609,26 @@ and depth video streams are stored in the dataset,
 Section \[postprocessing\] discusses how to reconstruct from them
 calibrated streams and 3D point clouds.
 
-  -------------------------------------------------------------- -- --
-  **Domain** & **Type** & **Details**\                                    
-  child 1 & audio & 16kHz, mono, semi-directional\                  
-  & face (RGB) & qHD (960$\times$540), 30Hz\                        
-  & face (depth) & VGA (640$\times$480), 30Hz\                      
-  & facial features & 68 3D points, 30Hz\                           
-  child 2 & audio & 16kHz, mono, semi-directional\                  
-  & face (RGB) & qHD (960$\times$540), 30Hz\                        
-  & face (depth) & VGA (640$\times$480), 30Hz\                      
-  & facial features^\[postprocesspass\]^ & 68 3D points, 30Hz\      
-  environment & RGB & qHD (960$\times$540), 29.7Hz\                 
-  touchscreen & background drawing (RGB) & 4Hz\                     
-  & touches & 6 points multi-touch, 10Hz\                           
-  & items position and orientation & ($x,y,\theta$), 10Hz\          
-  annotations &\                                                    
-  other &\                                                          
-  &\                                                                
-  -------------------------------------------------------------- -- --
+  **Domain**       **Type**                 **Details**
+  ---------------- ------------------------ -----------------------------------------
+  child 1          audio                    16kHz, mono, semi-directional
+                   face (RGB)               qHD (960 $\times$ 540), 30Hz
+                   face (depth)             VGA (640 $\times$ 480), 30Hz
+                   facial features          68 3D points, 30Hz
+  child 2          audio                    16kHz, mono, semi-directional
+                   face (RGB)               qHD (960 $\times$ 540), 30Hz
+                   face (depth)             VGA (640 $\times$ 480), 30Hz
+                   facial features          68 3D points, 30Hz
+  environment      RGB                      qHD (960 $\times$ 540), 29.7Hz
+  touchscreen      background drawing (RGB) 4Hz
+                   touches                  6 points multi-touch, 10Hz
+                   items pos. and orient.   ($x,y,\theta$), 10Hz
+  annotations                               hand-coded video annotations
 
-  : List of datastreams stored in each
-  record[]{data-label="table|datastreams"}
+  : List of datastreams recorded. Each datastream is
+  timestamped with a synchronised clock to facilitate later
+  analysis. {#tbl:datastreams}
+
 
 ##### Apparatus
 
@@ -1740,13 +1637,13 @@ calibrated streams and 3D point clouds.
 The sandtray is made of a 27" Samsung All-In-One computer running Ubuntu
 Linux and equipped with a fast 1TB SSD hard-drive. The computer is held
 horizontally in a custom aluminium frame standing 26cm above the floor
-(visible in Fig. \[fig|freeplay\]). All the cameras are plugged directly
+(visible in @fig:freeplay). All the cameras are plugged directly
 over USB-3 to the computer. The computer performs all the data
 acquisition using ROS Kinetic.
 
 The children’s faces are recorded using two short range Intel RealSense
 SR300 RGB-D cameras (0.2m to 1.2m) placed at the corners of the sandtray
-(Fig. \[fig|freeplay\]) and tilted to face the children. The cameras are
+(@fig:freeplay) and tilted to face the children. The cameras are
 rigidly mounted on custom 3D-printed brackets. This enables a precise
 measurement of their 6D pose relative to the touchscreen (extrinsic
 calibration).
@@ -1761,7 +1658,7 @@ precisely calibrated.
 
 ![The reconstructed 3D point cloud of one child face with the 68
 detected facial features, visualised in
-RViz.[]{data-label="fig|rviz"}](figs/3d-point-cloud-facial-features.png){width="0.9\linewidth"}
+RViz.](figs/3d-point-cloud-facial-features.png){#fig:freeplay-rviz width="0.9\linewidth"}
 
 ###### Software
 
@@ -1776,7 +1673,7 @@ children’s touches. The game interface is open-source and available
 online: <https://github.com/freeplay-sandbox/qt-gui>.
 
 By relying on ROS for the data acquisition, real-time monitoring of the
-interaction is also possible (Fig. \[fig|sandbox\], right). The ROS data
+interaction is also possible (@fig:sandbox, right). The ROS data
 acquisition pipeline is open-source as well, and available from
 <https://github.com/freeplay-sandbox/core>.
 
@@ -1787,19 +1684,38 @@ ensures that the exact same recording procedure (detailed in the next
 section) is followed for every participants. The supervisor is available
 online as well: <https://github.com/freeplay-sandbox/web-supervisor>.
 
+#### Data collection
 
-#### Demographics
+@Tbl:datastreams lists the datastreams that are collected
+during the game. By relying on ROS for the data acquisition (and in
+particular the `rosbag` tool), we ensure all the $\approx$ 10 streams are
+synchronised, timestamped, and, where appropriate, come with calibration
+information (for the cameras mainly). In our experiments, cameras were
+configured to stream in qHD resolution (960$\times$540 pixels) in an
+attempt to balance high enough resolution with tractable file size. It
+results in *bag* files weighting $\approx$ 1GB per minute.
 
+In our own experiments, all the data (including up to 5 simultaneous
+video streams) was recorded on a single computer (quad core i7-3770T,
+8GB RAM) equipped with a fast 4TB SSD drive. This computer was also
+running the game interface on its touch-enabled screen (sandtray),
+making the whole system compact and easy to deploy (one single device).
+
+##### Demographics
 
 In total, 120 children were recorded for a total duration of 45 hours
-and 48 minutes of data collection. These 120 children (age 4 to 8) were
-split into two conditions: a child-child condition and a child-robot
-condition. In both condition, and after a short tutorial, the children
-were simply invited to freely play with the sandbox, for as long as they
-wished (with a cap at 40 min).
+and 48 minutes of data collection. These 120 children (age 4 to 8) were recorded
+at their local school, or at the Plymouth University BabyLab (as suggested in
+the DoRoThy project).
 
-In the child-child condition (as seen in Figure \[annotator\]), 45
-free-play interactions ([i.e.,]{}90 children) were recorded with a
+The children were split into two conditions: a child-child condition and a
+child-robot condition. In both condition, and after a short tutorial, the
+children were simply invited to freely play with the sandbox, for as long as
+they wished (with a cap at 40 min).
+
+
+In the child-child condition (as seen in @fig:annotator), 45
+free-play interactions (i.e., 90 children) were recorded with a
 duration M=24.15 min (SD=11.25 min).
 
 In the child-robot condition, 30 children were recorded, M=19.18 min
@@ -1813,9 +1729,9 @@ which validates the location of the camera and the children to use the
 cameras to obtain facial social features.
 
 ![Durations of the interactions for the two
-conditions.[]{data-label="fig|durations"}](figs/durations.pdf){width="0.9\columnwidth"}
+conditions.[]{data-label="fig|durations"}](figs/durations.pdf){#fig:durations width=90%}
 
-Figure \[fig|durations\] presents an histogram of the durations of the
+@Fig:durations presents an histogram of the durations of the
 interactions for the two baselines. The distribution of the child-child
 interaction durations shows that (1) all children engage easily and for
 non-trivial amounts of time with the task; (2) the task leads to a wide
@@ -1833,23 +1749,182 @@ robot where playing side-by-side – in some case for rather long periods
 of time – without interacting at all.
 
 
-#### Ethical considerations and dataset availability {#availability}
+##### Protocol
 
-All data has been collected by researchers at \[hidden for blind
-review\], under a protocol approved by the university ethics committee.
-The parents of the participants explicitly consented to sharing of their
-child’s video and audio with the research community. The data is
-labelled with a unique participant code only and does not contain any
-identifying information, except the participant’s images. The child’s
-age and gender are also available.
+We typically adhere to the acquisition procedure described in
+@tbl:protocol with all participants. To ease later
+identification, each child is also given a different and brightly
+coloured sports bib to wear.
 
-The dataset is freely available to any interested researcher[^4]. Due to
-ethical and data protection regulations, the dataset is however made
-available in two forms: a public, Creative Commons licensed, version
-that does not include any video material of the children (no video
-streams, audio included); and a complete version that includes all video
-streams. This second version is freely available as well, but interested
-researchers must first fill a data protection form.
+Importantly, during the *Greetings* stage, we show the robot both moving
+and speaking (for instance, “Hello, I’m Nao. Today I’ll be playing with
+you. Exciting!” while waving at the children). This is meant to set the
+children’s expectations: they have seen that the robot can speak, move,
+and even behave in a social way.
+
+Also, the game interface of the free-play sandbox offers a tutorial
+mode, used to ensure the children know how to manipulate items on a
+touchscreen and draw. In our experience, this has never been an issue
+for children.
+
+  ------------------------------------------------------------------------------------------------
+  **Greetings** *(about 5 min)*\
+  [    ]{}explain the purpose of the study: showing robots how children play\
+  [    ]{}briefly present a Nao robot: the robot stands up, gives a short message, and sits down.\
+  [    ]{}place children on cushions\
+  [    ]{}complete demographics on the tablet\
+  [    ]{}remind the children that they can withdraw at anytime\
+  **Tutorial** *(1-2 min)*\
+  explain how to interact with the game, ensure the children are confident with the manipulation/drawing\
+  **Free-play task** (up to 40 min)\
+  [    ]{}initial prompt: *“Just to remind you, you can use the animals or draw. Whatever you like. If you run out of ideas, there’s also an ideas box. For example, the first one is a zoo. You could draw a zoo or tell a story. When you get bored or don’t want to play anymore, just let me know.”*\
+  [    ]{}let children play\
+  [    ]{}once they wish to stop, stop recording\
+  **Debriefing** *(about 2 min)*\
+  [    ]{}answer possible questions from the children\
+  [    ]{}give small reward ([e.g.,]{}stickers) as a thank you\
+  ------------------------------------------------------------------------------------------------
+
+  : Data acquisition protocol {#tbl:protocol}
+
+
+#### Data processing
+
+##### Face and body pose analysis
+
+Off-line post-processing has been performed on the images obtained from the
+cameras. We rely on the CMU OpenPose library [@cao2017realtime] to
+extract for both children the upper-body skeleton, 70 facial landmarks
+including the pupil position, as well as the hands’ skeleton (when
+visible).
+
+##### Game interactions analysis
+
+Game features are also produced by the different nodes involved in the
+analysis of the game. The Playground segmentation produce a map of the
+regions based on the colour which can be used with the positions of the
+animal to identify from which zone to which zone an animal has been
+moved. The relative position of animal can also indicate if two animals
+have been moved closer. These relations and the drawing inform on what
+high level action the child is doing and can be used to infer the
+child’s goal or desire.
+
+#### Annotation of Social interactions {#sec:coding-scheme}
+
+Annotating social interaction beyond surface behaviours is generally
+difficult. The observable, surface behaviours typically result of a
+superposition of the complex and non-observable underlying cognitive and
+emotional states. As such, these deeper socio-cognitive states can only
+be indirectly observed, and their labelling is typically error prone.
+
+Our aim is to provide insights on the social dynamics, and we have
+synthesised a new coding scheme for social interactions that reuse and
+adapt established social scales. Our coding scheme
+(@fig:coding-scheme) looks specifically at three axis: the
+level of *task engagement* (that distinguishes between *focused*, *task
+oriented* behaviours, and *disengaged* – yet sometimes highly social –
+behaviours); the level of social engagement (reusing Parten’s stages of
+play, but at the micro-task level); the social attitude (that encode
+attitudes like *supportive*, *aggressive*, *dominant*, *annoyed*, etc.)
+
+![The coding scheme used for annotating social interactions occurring
+during free-play episodes. Three main axis are studied: task engagement,
+social engagement and social
+attitude.](figs/coding-scheme.svg){#fig:coding-scheme width="\columnwidth"}
+
+###### Task engagement
+
+The first axis of our coding scheme aims at making a broad distinction
+between ‘on-task’ behaviours (even tough the free-play sandbox does not
+explicitly require the children to perform a specific task, they are
+still engaged in an underlying task: to play with the game) and
+‘off-task’ behaviours. We call ‘on-task’ behaviours *goal oriented*:
+they encompass considered, planned actions (that might be social or
+not). *Aimless* behaviours (with respect to the task) encompass opposite
+behaviours: being silly, chatting about unrelated matters, having a good
+laugh, etc. These *Aimless* behaviours are in fact often highly social,
+and play an important role in establishing trust and cooperation between
+the peers. In that sense, they should not be discarded.
+
+###### Social engagement: Parten’s stages of play at micro-level
+
+In our scheme, we characterise *Social engagement* by building upon
+Parten’s stages of play. These 5 stages of play are normally used to
+characterise rather long sequences (at least several minutes) of social
+interactions. Here, we apply them at the level of each of the
+micro-sequences of the interactions: one child is drawing and the other
+is observing is labelled as *solitary play* for the former child,
+*on-looker* behaviour for the later; the two children discuss what to do
+next: this sequence is annotated as a *cooperative* behaviour; etc.
+
+By suggesting such a fine-grained coding of social engagement, we enable
+proper analyses of the internal dynamics of a long sequence of social
+interaction.
+
+###### Social attitude
+
+The constructs related to the social *attitude* of the children derive
+from the *Social Communication Coding System* (SCCS) proposed by
+Olswang et al. [@olswang2006reliability]. The SCCS consists in 6
+mutually exclusive constructs characterising social communication
+(*hostile*; *pro-social*; *assertive*; *passive*; *adult seeking*;
+*irrelevant*) and were specifically created to characterise children
+communication in a classroom setting.
+
+We transpose these constructs from the communication domain to the
+general behavioural domain, keeping the *pro-social*, *hostile* (whose
+scope we broaden in *adversarial*), *assertive* (i.e., dominant), and
+*passive* constructs. In our scheme, the *adult seeking* and
+*irrelevant* constructs belong to Task Engagement axis.
+
+Finally, we have added the construct *Frustrated* to describe children
+who are reluctant or refuse to engage in a specific phase of interaction
+because of a perceived lack of fairness or attention from their peer, or
+because they fail at achieving a particular task (like a drawing).
+
+###### Video coding
+
+The coding bas been performed post-hoc with the help of a dedicated annotation
+tool created by the researcher (@fig:annotator) which is part of the free-play
+sandbox toolbox.  This tool can replay and randomly seek in the three video
+streams, synchronised with the recorded state of the game (including the
+drawings as they are created). An interactive timeline displaying the
+annotations is also displayed.
+
+The annotation tool offers a remote interface for the annotator (made of
+large buttons, and visually similar to @fig:coding-scheme)
+that is typically displayed on a tablet and allow the simultaneous
+coding of the behaviours of the two children. Usual video coding
+practices (double-coding of a portion of the dataset and calculation of
+an inter-judge agreement score) would have to be followed.
+
+![Screenshot of the dedicated tool developed for rapid annotation of the
+social
+interactions.](figs/annotator.jpg){#fig:annotator width="\linewidth"}
+
+
+
+##### Ethical considerations and dataset availability {#availability}
+
+All data has been collected by the researcher, with the help of a research
+assistant (paid by the DoRoThy project as well).
+
+The presented experimental protocol had been approved by the university ethics
+committee.  The parents of the participants explicitly consented to sharing of
+their child’s video and audio with the research community. The data is labelled
+with a unique participant code only and does not contain any identifying
+information, except the participant’s images. The child’s age and gender are
+also available.
+
+Following the EU H2020 open-data approach, **the dataset is freely available to
+any interested researcher, and can be requested online:
+[freeplay-sandbox.github.io]{https://freeplay-sandbox.github.io/}**. Due to
+ethical and data protection regulations, the dataset is however made available
+in two forms: a public, Creative Commons licensed, version that does not include
+any video material of the children (no video streams, audio included); and a
+complete version that includes all video streams. This second version is freely
+available as well, but interested researchers must first fill a data protection
+form.
 
 
 <!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
@@ -1857,6 +1932,174 @@ researchers must first fill a data protection form.
 <!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
 
 ### WP4: *Management, dissemination and knowledge transfer*
+
+
+The main tasks conducted in the WP4 include:
+
+- preparation of academic publications
+- participation to conferences, including invited talks/keynotes
+- organisation of conferences and workshops
+- student supervision and teaching
+- participation to interdisciplinary seminars
+- robotic workshops organised with local schools
+- participation to public event to promote and present academic research in
+  robotics
+- providing online visibility to the researcher's academic activities
+
+**Summary of the deliverables**
+
+
+| | |
+|------|-------------------------------------------------------------|
+| D4.1 Media press release for the European Robotic Week | [UK robotic week 2016](https://www.plymouth.ac.uk/whats-on/uk-robotics-week-at-plymouth-university), [UK robotic week 2017](https://www.plymouth.ac.uk/whats-on/uk-robotics-week-2017), awarded Best Presentation Award at Plymouth's UK Robotic Week 2017 |
+| D4.2 Proceedings from workshop on meta-cognition | Superseded by [proceedings of the Workshop on Cognitive Architectures](https://sites.google.com/site/cogarch4socialhri2016/proceedings) |
+| D4.3 Scientific publications | 12 publications + 4 under review, see [list](#publis) |
+| D4.4 Press release of the MSC Project Open Day | Did not take place |
+| D4.5 Press release of the museum exhibition | Did not take place |
+| D4.6 2-weeks research stay at Aldebaran robotics | Canceled due to staff changes at Aldebaran Robotics |
+
+
+Additional deliverables, not present in the original project:
+
+| | |
+|------|-------------------------------------------------------------|
+| D4.7 | | 
+| D4.7 | | 
+| D4.7 | | 
+| D4.7 | | 
+| D4.7 | | 
+
+
+#### Academic publications
+
+Over the course of the DoRoThy project, the researcher has authored or
+co-authored **12 peer-reviewed publications**, all acknowledging the EU H2020
+funding of the DoRoThy project.
+
+The complete list of publications is provided in [the appendices](#publis).
+
+One additional publication could not acknowledge the DoRoThy grant (as it
+was published before the grant agreement was signed), but it is
+mentioned here as it result directly from the research conducted to
+prepare the DoRoThy grant.
+
+#### Conferences & Invited talks
+
+Over the course of the DoRoThy project, the research was invited to present his research to the
+following conferences:
+
+- 03/2016: **HRI 2016** (2 talks)
+- 03/2017: **HRI 2017** (1 talk)
+- 11/2017: **AAAI Fall Symposium** - AI for HRI (**invited keynote**)
+
+In total, about 1000 academics have been reached during these 3 events.
+
+Besides, the researcher gave **8 seminars or invited talks** in other
+institutions (**both UK and international** ones), with **3 more to take
+place** in the coming 3 months:
+
+-   11/2015: HRI2016 (invited talk - HRI mini symposium at Standford University, USA)
+-   09/2016: Bristol Robotics Lab (seminar, UK)
+-   11/2016: HRI2017 (invited talk - HRI mini symposium at Wien University, Austria)
+-   01/2017: INRIA Bordeaux (seminar, France)
+-   02/2017: Heriot Watt (seminar, UK)
+-   02/2017: Edimburgh University (seminar, UK)
+-   05/2017: Heriot Watt (invited talk, UK)
+-   04/2017: IST Lisbon (seminar, Portugal)
+
+Planned:
+
+-   11/2017: HRI2018 (invited talk - HRI mini symposium at Cornell University, USA)
+-   01/2018: LAAS CNRS (seminar - France)
+-   01/2018: IIT Genoa (seminar - Italy)
+
+### Participation to interdisciplinary seminars
+
+In addition to the seminars and invited talks already mentioned above, the
+researcher has also been invited to take part to seminars organised in
+neighbouring fields:
+
+- 02/2017: invited talk at the CogNovo interdisciplinary symposium on
+  Creativity, Plymouth University
+- 11/2017: invited to give a seminar at the School of Psychology, Plymouth
+  University
+
+
+#### Organisation of conferences and workshops
+
+In 2015, the researcher was tasked with the organisation of the **workshop on
+attention tracking** during the [HRI Summer School
+2015](https://hrisummerschool15.wordpress.com/).  The teaching material created
+for the occasion is openly available online on the researcher's GitHub account:
+[github.com/severin-lemaignan/attention-assessment-workshop](https://github.com/severin-lemaignan/attention-assessment-workshop).
+
+From 2016 onwards, the researcher hold an (invite-only) editorial role as
+**Program Committee member** for the HRI conference in 2016, 2017 and 2018, and
+the IROS conference 2016 and 2017.
+
+As a member of the Program Committee of the HRI conference, the researcher has
+been invited and attended 3 3-days long PC meetings in 2015, 2016 and 2017,
+where he was working in close proximity with the leading academics in the
+Human-Robot Interaction field. These meetings have been **invaluable opportunities
+for the researcher to develop interpersonal relations and build a strong
+international network with his peers**.
+
+In 2016, the researcher also **organised a successful workshop** (with about 30
+participants) **on Cognitive Architecture for Social Robotics** (with P. Baxter
+and G. Trafton) [@baxter2016cognitive]. The website of the workshop, as well as
+the proceedings,  can be found here: [Workshop on Cognitive
+Architectures](https://sites.google.com/site/cogarch4socialhri2016/proceedings).
+
+In 2017, the researcher was invited to **organise and chair the recently created
+*alt.HRI* track of the HRI conference**, gathering radical and possibly
+provocative, yet high quality, research in the field of Human-Robot Interaction.
+
+#### Student supervision and teaching
+
+From 2015 to 2017, the research has co-supervised 2 PhD students (Emmanuel Senft
+and Chris Wallbridge).
+
+This supervision activity has led to several co-authored publications with these
+students:
+
+-   **Supervised Autonomy for Online Learning in Human-Robot
+    Interaction** [@senft2017supervised]
+-   **Qualitative Review of Object Recognition Techniques for Tabletop
+    Manipulation** [@wallbridge2017qualitative]
+-   **Toward Supervised Reinforcement Learning with Partial States for
+    Social HRI** [@senft2017toward]
+-   **Leveraging Human Inputs in Interactive Machine Learning for Human
+    Robot Interaction** [@senft2017leveraging]
+-   **SPARC: an efficient way to combine reinforcement learning and
+    supervised autonomy** [@senft2016sparc]
+-   **Providing a Robot with Learning Abilities Improves its Perception
+    by Users** [@senft2016providing]
+
+Publications under review:
+
+-   **The Free-play Sandbox: a Novel Methodology for the Evaluation of Social Robotics**
+    -   S. Lemaignan; E. Senft; T. Belpaeme
+-   **Spatial Referring Expressions: Establishing Common Ground in Child-Robot Interaction**
+    -   C. Wallbridge; S. Lemaignan; T. Belpaeme
+
+
+Besides, the researcher engaged with teaching activities during one semester (Autumn 2016),
+taking over 2 hours/week of lectures and 3 hours/week of lab. The module
+(ROCO318: Mobile and Humanoid Robots) aimed at 3rd year students. The teaching
+material is open and available online:
+[github.com/severin-lemaignan/module-mobile-and-humanoid-robots](https://github.com/severin-lemaignan/module-mobile-and-humanoid-robots).
+
+This initial teaching experience has proven instrumental in getting a permanent lecturer
+position at the host institution at the end of the project.
+
+### Robotic workshops organised with local schools
+
+
+
+### Participation to public event to promote and present academic research in robotics
+
+### Providing online visibility to the researcher's academic activities
+
 
 
 <!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
@@ -1869,6 +2112,22 @@ researchers must first fill a data protection form.
 ----------
 
 
+
+The central foreseen impact of DoRoThy was to promote and further
+develop the *European leadership in cognitive robotics as well as
+natural human-robot interaction* (Section 3.1 of Annex 1). While the
+detailed work carried out over the course of the project has
+significantly deviated from the original proposed plan (see Section 5
+below), DoRoThy has achieved this high-level goal, by effectively laying
+the ground for a novel research paradigm for cognitive robotics and
+human-robot interaction: deep-learning of social interaction.
+
+
+
+The DoRoThy project has led to significant progress towards the understanding and
+analysis of complex, natural social interactions.
+
+
 <!--
 Include in this section whether the information on section 2.1 of the
 DoA (how your project will contribute to the expected impacts) is still
@@ -1879,10 +2138,6 @@ case.
 To date, 12 publications acknowledging the DoRoThy have been published
 (see list in Section 6.1, below). Four others are under review.
 
-An additional publication could not acknowledge the DoRoThy grant (as it
-was published before the grant agreement was signed), but it is
-mentioned here as it result directly from the research conducted to
-prepare the DoRoThy grant.
 
 ### 1.3.1 Enhancing research- and innovation-related human resources, skills and working conditions to realise the potential of individuals and to provide new career perspectives
 
@@ -1908,7 +2163,7 @@ place** in the coming 3 months:
 -   05/2017: Heriot Watt (invited talk, UK)
 -   04/2017: IST Lisbon (seminar, Portugal)
 
-Planned
+Planned:
 
 -   11/2017: AAAI Fall Symposium - AI for HRI (**invited keynote**, USA)
 -   11/2017: HRI2018 (invited talk - HRI mini symposium at Cornell University, USA)
@@ -1931,10 +2186,11 @@ top European research lab in robotics.**
 2. Update of the plan for exploitation and dissemination of result
 ==================================================================
 
-
-Include in this section whether the plan for exploitation and
+<!-- Include in this section whether the plan for exploitation and
 dissemination of results as described in the DoA needs to be updated and
-give details.
+give details. -->
+
+N/A
 
 3. Update of the data management plan
 =====================================
@@ -1952,17 +2208,30 @@ N/A
 5.1 Tasks
 ---------
 
+As presented in section 1.1.1, the DoRoThy project underwent a significant shift
+of focus after an initial period of 6 to 8 months of initial investigation (see
+report on [WP1](#wp1) and [WP2](#wp2)).
 
-Include explanations for tasks not fully implemented, critical
-objectives not fully achieved and/or not being on schedule. Explain also
-the impact on other tasks on the available resources and the planning.
+In order to maximise the impact potential of the project, the project
+essentially shifted from *symbolic cognition for theory of mind* to *social
+interactions and machine learning*.
+
+To better reflect this change, the titles of the first 3 work packages have been
+modified, as indicated in section 1.1.1:
+
+- Work Package 1: *Formal Model of Representation-level Meta-Cognition for
+  Robots* becomes *Models of social cognition for human-robot interaction*;
+- Work package 2: *Experiment 1: Standard False-Belief Experiment* becomes
+  *Experimental Frameworks for the Study of Social HRI*;
+- Work package 3: *Experiment 2: Representation-level Meta-Cognition* becomes
+  *The PInSoRo dataset of Social HRI*;
 
 
 6. Appendices
 =============
 
-6.1 Annex 1 - List of publication by the researcher
----------------------------------------------------
+6.1 List of publications by the researcher {#publis}
+------------------------------------------
 
 List of academic publications where the DoRoThy grant is acknowledged.
 
@@ -2050,8 +2319,8 @@ List of academic publications where the DoRoThy grant is acknowledged.
 
 
 
-6.2 Annex 2 - Open-source code contributions {#annex62}
---------------------------------------------
+6.2 Open-source code contributions {#annex62}
+----------------------------------
 
 
 ### 6.2.1 New projects or projects with major new contributions resulting from the DoRoThy
