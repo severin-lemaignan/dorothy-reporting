@@ -2,9 +2,6 @@
 ========================================================================================
 
 
-The DoRoThy project is set in the frame of the FET proactive theme
-*'Knowing, doing and being: cognition beyond problem solving'*
-
 1.1 Objectives
 --------------
 
@@ -108,10 +105,20 @@ Additional deliverables, not present in the original project:
 <!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
 <!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
 
-#### Mutual Modelling and Developmental Psychology
+#### Scientific foundations of mutual modelling
+
+The first task T1.1 of WP1 relates to identifying the scientific &
+interdisciplinary foundations of the theory of mind, as well as the underlying
+models used in the different discipline.
 
 
-##### Connections vs. representations
+We report here on the litterature research conducted in three fields
+(developmental psychology; psycho-linguistics; formal epistemology) where the
+question of the modelling of the others agents play an important role.
+
+##### Mutual Modelling and Developmental Psychology
+
+###### Connections vs. representations
 
 In [@flavell1990developmental], Flavell relates perspective taking
 *Level 1* to establishing *cognitive connections* (I see, I hear, I
@@ -126,7 +133,7 @@ those children are able to explicitly manipulate cognitive connections
 (they know for instance that these are largely independent of each other
 and that they can evolve over time) and know as well that their own
 connections are independent of those of other people, they do not think
-that one concept can *seriously* ([[*i.e. *]{}]{}non playfully) hold
+that one concept can *seriously* (i.e., non playfully) hold
 several, possibly conflicting, representations.
 
 This *connection-representation* account appears to be a significant
@@ -306,92 +313,6 @@ modelling mechanism is therefore harder to master for children than
 
 #### Mutual Modelling in Psycholinguistics and Collaborative Learning
 
-
-##### A support for shared understanding
-
-*Computer Supported Collaborative Learning* (CSCL) researches the
-cognitive mechanisms and practical techniques underpinning efficient
-learning in social situations. From its very beginning, CSCL research
-has been following Roschelle and Teasley’s
-suggestion [@roschelle1995construction] that collaborative learning has
-something to do with the process of constructing and maintaining a
-*shared understanding* of the task at hand. Building a shared/mutual
-understanding refers to the upper class of collaborative learning
-situations, those in which students should build upon each other’s
-understanding to refine their own understanding. What is expected to
-produce learning is not the mere fact that two students build the same
-understanding but the cognitive effort they have to engage to build this
-shared understanding [@schwartz1995emergence].
-
-The construction of a shared understanding has been investigated for
-several years in psycholinguistics, under the notion of
-*grounding*[^1] (Clark, in [@clark1986referring]). However, the
-relevance of grounding mechanisms for explaining learning outcomes has
-been questioned in learning sciences. The monitoring and repair of
-misunderstanding explains for instance referential failures in short
-dialogue episodes but does hardly predict *conceptual change*
-([[*i.e. *]{}]{}the acquisition, acceptation and integration of a new
-belief into one’s mental model) over longer
-sessions [@dillenbourg2006sharing]. The cumulative effect of grounding
-episodes can probably be better understood from a socio-cultural
-perspective:
-
-> Collaborative learning is associated with the increased
-> cognitive-interactional effort involved in the transition from
-> *learning to understand each other* to *learning to understand the
-> meanings of the semiotic tools that constitute the mediators of
-> interpersonal interaction* [@baker1999role]
-
-Along this line, several scholars suggest that CSCL research should go
-deeper in the understanding of how partners engage into shared meaning
-making [@stahl2007meaning] or *intersubjective* meaning
-making [@suthers2006technology].
-
-Paradoxically, while Clark’s theory is somewhat too linguistic from a
-conceptual change viewpoint, it is criticized at the same time as being
-too cognitivist by some psycholinguists, [[*i.e. *]{}]{}as
-overestimating the amount of shared knowledge and mutual representations
-actually necessary to conduct a dialogue. The fundamental issue, as old
-as philosophy, is the degree of coupling between the different levels of
-dialogue, mostly between the lexical/syntactical level and the deeper
-semantic levels. In [@pickering2006alignment], Pickering and Garrod
-argue that the mutual understanding starts mostly with a *superficial
-alignment* at the level of the linguistic representations, due to
-priming mechanisms, and that this local alignment may – in some cases –
-lead to a *global alignment* of the semantic level (*deep grounding*).
-For these authors, the convergence in dialogue, and even the repair of
-some misunderstandings, is explained by this mimetic behavior more than
-by a monitoring of each other’s knowledge: *“...interlocutors do not
-need to monitor and develop full common ground as a regular, constant
-part of routine conversation, as it would be unnecessary and far too
-costly. Establishment of full common ground is, we argue, a specialized
-and non-automatic process that is used primarily in times of difficulty
-(when radical misalignment becomes
-apparent).”* [@pickering2006alignment] This view is actually not
-incompatible with Clark’s *grounding
-criterion* [@clark1989contributing]: the degree of shared understanding
-that peers need to reach depends upon the task they perform. For
-instance, a dialogue between two surgeons might rely on superficial
-alignment if they talk about their friends but has to guarantee accurate
-common grounds when talking about which intervention will be conducted
-in which way on which patient.
-
-Deep grounding or shared meaning making requires some cognitive load.
-For Clark, what is important is not the individual effort made by the
-receiver of a communicative act, but the overall *least collaborative
-effort* [@clark1986referring]. The cost of producing a perfect utterance
-may be higher than the cost of repairing the problems that may arise
-through misunderstandings. For instance, subjects are less careful about
-adapting their utterances to their partner when they know they can
-provide feedback on his/her understanding [@schober1993spatial].
-Dillenbourg [[*et al. *]{}]{}introduced the notion of *optimal
-collaborative effort* [@dillenbourg1995evolution] to stress that
-misunderstanding should not be viewed as something to be avoided (if
-this was possible), but as an opportunity to engage into verbalization,
-explanation, negotiation, and so forth.
-
-##### CSCL model of mutual modelling {#cscl-model}
-
 Dillenbourg proposes in [@sangin2007partner] a model to represent mutual
 modelling situations. He uses the notation
 [[$\mathcal{M}(A, B, X)$]{}]{} to denote “$A$ knows that $B$ knows $X$”
@@ -432,17 +353,12 @@ variables:
 These notations lead to simple representations of mutual modelling
 during interactions, and Dillenbourg derives several questions out of
 this model. Adapted to a human-robot interaction situation,
-Figure \[mm\_symmetry\] represents for instance a dyadic interaction (we
+@fig:mm (A) represents for instance a dyadic interaction (we
 use $H$ to denote a human, while $R$ stands for a robot). $\Delta_1$
 illustrates what Dillenbourg calls the *symmetry* question ([*Is the
 accuracy of my model related or not to the accuracy of your model?*]{}).
 
-(0,0) node\[anchor=north\] (A) [H]{}; (10,0) node\[anchor=north\] (B)
-[R]{}; (5,2) node\[anchor=north\]
-[[[$\mathcal{M}^{\circ}(H, R,  X)$]{}]{}]{}; (5,-2) node\[anchor=north\]
-[[[$\mathcal{M}^{\circ}(R, H,  X)$]{}]{}]{}; (5,1) – (5,-1.9)
-node\[midway, sloped, above\] [$\Delta_1$]{}; (A) to\[bend left\] (B);
-(B) to\[bend left\] (A);
+![Three levels of mutual modelling proposed by Dillenbourg](figs/mm.png){#fig:mm}
 
 With triads (two humans $H_1$ and $H_2$ and a robot $R$), we may compute
 the accuracy of 6 models [[$\mathcal{M}^{\circ}(H_1, H_2, X)$]{}]{},
@@ -453,7 +369,7 @@ the accuracy of 6 models [[$\mathcal{M}^{\circ}(H_1, H_2, X)$]{}]{},
 [[$\mathcal{M}^{\circ}(H_2, R, X)$]{}]{}.
 
 This leads to two *triangle questions* relevant to HRI
-(Figure \[mm\_triangles\]): Do $H_1$ and $H_2$ have the same accuracy
+(@fig:mm (B)): Do $H_1$ and $H_2$ have the same accuracy
 when modelling the robot $R$?
 ($\Delta_2 = \Delta({{\mathcal{M}(H_1, R, X)}},
 {{\mathcal{M}(H_2, R, X)}})$), and conversely, what may lead $R$ to
@@ -462,17 +378,10 @@ model more accurately $H_1$ or $H_2$?
 
 Finally, Dillenbourg also suggests a *rectangle question*: how self-
 versus other modelling compares ($\Delta_4$ in
-Figure \[mm\_rectangle\])? This gives an indication of meta-cognitive
+@fig:mm (C))? This gives an indication of meta-cognitive
 skills of the agents. We can also question if the modelling skills
 depend upon what aspects are being modeled ($X$ or $Y$) which would
-explain vertical differences ($\Delta_5$ in Figure \[mm\_rectangle\]).
-
-(0,0) node (a) [[[$\mathcal{M}^{\circ}(A,  B,  X)$]{}]{}]{}; (10,0) node
-(b) [[[$\mathcal{M}^{\circ}(A,  A,  X)$]{}]{}]{}; (10,-4) node (c)
-[[[$\mathcal{M}^{\circ}(A,  A,  Y)$]{}]{}]{}; (0,-4) node (d)
-[[[$\mathcal{M}^{\circ}(A,  B,  Y)$]{}]{}]{}; (a) – (b) node\[midway,
-below\] [$\Delta_4$]{}; (b) – (c); (c) – (d); (d) – (a) node\[midway,
-sloped, above\] [$\Delta_5$]{};
+explain vertical differences ($\Delta_5$ in @fig:mm (C)).
 
 This model, designed in the context of human collaboration, evidences
 questions that are relevant as well to human-robot interactions.
@@ -581,18 +490,17 @@ Logics* have already been successfully used in robotics
 (see [@lemaignan2012symbolic] for a review).
 
 
-#### A Model of Socio-Cognitive Awareness for Robots
+#### An initial model of Socio-Cognitive Awareness for robots
 
-#### The classical approach
-
-Symbolic approaches to social cognition work by first building a mental
+As seen in the previous section, symbolic approaches to social cognition work by first building a mental
 model of the interacting humans. This is typically done by a combination
 of 3D situation assessment (the robot builds and update a semantic 3D
 model of its environment) and visual perspective taking (based on the
 estimation of the pose of the human head). This permits the computation
 of allocentric, and more importantly, egocentric spatial relations
 between the spatial entities in the environment (we call it *social
-situation assessment*).
+situation assessment*). See [WP2]{#wp2} for the work done on implementing such a
+situation assessment module.
 
 This geometric computations are then turned into symbolic
 representations, typically using logical statements (embedded in logic
@@ -619,11 +527,11 @@ representations* on the other hand. Now, if we are to model someone
 else’s mind beyond a naive geometric model of their perception, we
 indeed enter the realm of *representations*. What are they? How to
 access them? How to represent and manipulate them? These three questions
-lay at the core of this work, and as such we effectively take over the
+lay at the core of the DoRoThy project, and as such we effectively take over the
 point we previously made in [@lemaignan2015mutual]: we ultimately want
 to come up with a meta-representational cognitive system to *represents
 representations* (including representations of *false* beliefs or
-unknown facts, [i.e.]{}suppositions).
+unknown facts, i.e. suppositions).
 
 We must immediately clarify that, even though this goal may seem to
 pre-suppose *symbolic* meta-representations, this is not the case: at
@@ -631,33 +539,23 @@ that stage, we do not have evidence that a particular kind of
 computational structure may better support the representation and
 manipulation of mental representations.
 
-#### Phenomenal [*vs.*]{}Access Consciousness
+###### From Social Attention to Social Modelling: the Attention Schema Theory
 
-Neuroscientist view: Block’s proposal of two kind of
+##### Phenomenal *vs.* Access Consciousness
+
+The neuroscientist view proposed by Block comprises of two kind of
 consciousness [@block1996can]: *phenomenal* consciousness as the raw
 inner experience; *access* consciousness as the more abstract, cognitive
 ability to think about and report on those experiences.
 
-Does this map to the traditional sub-symbolic/symbolic divide that we
-observe in artificial intelligence, and in particular in robotics?
-
-The *phenomenal consciousness* would then be the immediate raw
-perceptual inputs: video streams from cameras, readings for torque and
-force sensors, joint positions, etc.
-
-The *access consciousness* would typically be the symbolic
-representation of these inputs.
-
-We must however keep in mind that there is likely no such rigid
+We map in our model these two kind of consciousness to the traditional
+sub-symbolic/symbolic divide that we observe in artificial intelligence, and in
+particular in robotics. The *phenomenal consciousness* is the immediate, raw
+perceptual inputs: video streams from cameras, readings for torque and force
+sensors, joint positions, etc.  The *access consciousness* is the symbolic,
+abstract representation of these inputs. We must however keep in mind that there is likely no such rigid
 dichotomy between phenomenal consciousness and access consciousness. It
 is rather a continuum of processing [@graziano2013consciousness p.55]
-
-Recursivity of consciousness: if I’m looking at a green apple, my
-cognitive machinery can decide and report that I’m aware of green. I can
-also be aware of the deciding and aware of the
-reporting [@graziano2013consciousness p.55].
-
-#### From Social Attention to Social Modelling: the Attention Schema Theory
 
 The hypothesis that we hereafter develop and turn into a cognitive model
 is the following: **mental representations are snapshots of awareness,
@@ -671,85 +569,68 @@ attention, it has to be mediated. We suggest that **modelling other’s
 state of awareness is mediated by one’s own attentional system, through
 joint attention mechanisms**.
 
-Our approach draws form the *Attention Schema Theory*, proposed by
-Grazino [@graziano2013consciousness].
+![Illustration of the Social Awareness model](figs/social-awareness.png){#fig:socialaware}
 
-What awareness can do? “the brain *does* attention, but *knows*
-awareness”: as such, “awareness can in principle be verbally reported”.
+Our approach draws form the *Attention Schema Theory* (@fig:socialaware), proposed by
+Grazino [@graziano2013consciousness]. We use an *associative memory network* as
+an *Informational Proxy* for the attention system and we postualte that
+**modeling one other mental representations equates to taking snapshots of their
+current state of awareness**.
 
-Associative Memory as an Informational Proxy for the Attention System
+As we do not have direct access to others’ process of attention, it has
+to be mediated. Following Graziano, we hypotesise that **modelling
+other’s state of awareness is mediated by one’s own attentional system,
+through joint attention mechanisms**:
 
-1.  Perceptual inputs feed in an associative memory
+1.   [**mental representations**]{} are [**snapshots of what
+    we are aware of**]{}
 
-2.  the resulting set of pre-activated units is the current *focus of
-    attention* – this step may require dimensionality reduction
-    techniques
+2.   [**awareness**]{} is the label we conveniently put on the
+    [ **process of attention**]{}
 
-3.  According to the Attention Schema Theory, by *explicitely* labelling
-    the activated and pre-activated units as being attended, we make the
-    robot *aware* of the corresponding phenomenons.
+3.   attention at time t is the label we put on the set of the
+    [ **activated units**]{} in a (biased) [**associative memory
+    network**]{}
 
-4.  The labelling occurs by the mean of a symbolic association within a
-    semantic network (ontology)
+4.   modelling [**others’ mental representations**]{} is
+    taking snapshots of their own current state of awareness
 
-##### Attention
+5.   modelling other’s state of awareness, their current
+    attentional process, is [**mediated by one’s own attentional
+    system**]{}, typically through [**joint attention**]{} mechanisms
 
-Modelled as a *Biased Competition Model of
-Attention* [@desimone1995neural]. Implemented using a particular
+6.   Points 1 to 5 essentially refer to a *phenomenal*
+    awareness (a *raw* inner experience). *Phenomenal* awareness can be
+    turned into *access consciousness* (the abstract, cognitive ability
+    to reflect on the inner experience)
+
+7.   In AI, *phenomal awareness* maps to connectionist
+    approaches, while *access consciousness* maps to [ **symbolic
+    representations**]{}
+
+
+The attention itself is modelled as a *Biased Competition Model of
+Attention* [@desimone1995neural] that can be implemented using a particular
 *Associative Memory Network* with an additional top-down biasing
-mechanism.
+mechanism. Such associative memory networks have been extensively discussed by the researcher
+with P. Baxter, researcher at the host institution.
 
-##### Memory-mediated Attention
+One of the results of these discussions is a efficient re-implementation of
+Baxter's model of associative memory [@baxter2012modelling], @fig:asso-mem. The
+link to the corresponding open-source code repository is available in the
+[appendices](#annex62).
 
-*Attention* is modelled as the set of activated units in an associative
-memory network.
-
-Interplay between multi-modal social cues on one hand, and priming of
-previously activated physical entities (objects, agents) and
-
-Attention
-
-##### Biasing Mechanisms
-
-Biasing competition [@beck2009top]
-
-The bottom-up biasing mechanism follows naturally from the structure of
-the associatve memory model: a strong and long activation of a
-perceptual input leads to the activation of the corresponding unit in
-the memory network and the suppression of competing inputs.
-
-The top-down mechanism is to be invented :-) It should enable high-level
-decisional processes to effectively suppress (or reinforce) units. The
-*nature* and *representation* of these high-level processes is unclear,
-but might be of symbolic nature.
-
-##### Social Attention
-
-What do we call the *attention state* of a partner?
-
-Grazino [@graziano2013consciousness]: “the mental machinery to model
-someone else attentional state is the same as the one used for oneself.”
-
-“In both case, the purpose is understanding and predicting one’s
-behaviour.”
-
-Cues from which we reconstruct someone else’s attentional state (from
-Graziano):
-
--   gaze direction
-
--   facial expression
-
--   body language
-
--   prior knowledge of person
-
--   location of salient objects
+![Visualisation of an associative memory network. New implementation by the researcher based on [@baxter2012modelling]](figs/associative-memory.png){#fig:asso-mem}
 
 
+This model of *social awareness* for the robot is remained at the stage of a
+theoretical idea, and after further discussions with other senior academics at
+the host institution, the researcher has decided to shift the reseach focus
+towards a more concrete investigation of the dynamics of the social
+interactions, with possibly machine-learning applications in mind.
 
 
-#### Studying social interactions
+#### A conceptual framework to studying social interactions
 
 Studying social interactions requires a social *situation* that
 effectively elicits interactions between the participants. Such a
@@ -795,7 +676,8 @@ easy deployment, short enough experimental sessions to allow for large
 groups of participants).
 
 In the frame of the DoRoThy project, the researcher has developed such a novel
-social sitation, presented in [WP2](#wp2).
+social sitation, presented in details in [WP2](#wp2). This new paradigm builds
+on *social play*.
 
 ##### Social play
 
@@ -823,22 +705,22 @@ established five *stages of play* [@parten1932social], corresponding to
 different stages of development, and accordingly associated with typical
 age ranges:
 
-1.  [**Solitary (independent) play**]{}, age 2-3: Playing separately
+1.  **Solitary (independent) play**, age 2-3: Playing separately
     from others, with no reference to what others are doing.
 
-2.  [**Onlooker play**]{}, age 2.5-3.5: Watching others play. May engage
+2.  **Onlooker play**, age 2.5-3.5: Watching others play. May engage
     in conversation but not engage in doing. True focus on the children
     at play.
 
-3.  [**Parallel play**]{} (adjacent play, social co-action), age
+3.  **Parallel play** (adjacent play, social co-action), age
     2.5-3.5: Playing with similar objects, clearly beside others but not
     with them (near but not with others.)
 
-4.  [**Associative play**]{}, age 3-4: Playing with others without
+4.  **Associative play**, age 3-4: Playing with others without
     organization of play activity. Initiating or responding to
     interaction with peers.
 
-5.  [**Cooperative play**]{}, age 4+: Coordinating one’s behavior with
+5.  **Cooperative play**, age 4+: Coordinating one’s behavior with
     that of a peer. Everyone has a role, with the emergence of a sense
     of belonging to a group. Beginning of “team work.”
 
@@ -848,8 +730,9 @@ must be noted that the age ranges are only indicative. In particular,
 most of the early behaviours still occur at times by older children.
 
 Interestingly, these five stages can been looked at from the perspective
-of HRI as well. They certainly evoke a roadmap for the development of
-human-robot social interactions.
+of HRI as well. They evoke a roadmap for the development of human-robot social
+interactions that forms the theoretical background of the free play sandbox
+paradigm, detailed in the next section.
 
 
 
@@ -1174,7 +1057,7 @@ performance, the robot and the operator need to compute spatial relationships
 between objects from the visual perspective of the participant.
 
 
-![Schema of the underworlds architecture used in the H2020 L2TOR project](figs/l2tor.pdf){#fig:l2tor height=300px}
+![Schema of the underworlds architecture used in the H2020 L2TOR project](figs/l2tor.png){#fig:l2tor height=300px}
 
 
 ##### RGB-D vision for the Nao robot
@@ -1212,7 +1095,7 @@ interactions, and builds on a *sandboxed free-play environment*.
 free-play situation, by drawing and manipulating items on a touchscreen.
 Children are facing each other and sit on cushions. Each child wears a
 bright sports bib, either purple or yellow, to facilitate later
-identification.](figs/setup_top.svg){#fig:freeplay width="0.9\columnwidth"}
+identification.](figs/setup_top.png){#fig:freeplay width="0.9\columnwidth"}
 
 ##### Task
 
@@ -1250,23 +1133,22 @@ automatically detected in 98% of the recorded frames.
 ![Example of a possible game situation. Items (animals, characters...)
 can be dragged over the whole play area, while the background picture
 can be painted over by picking a
-colour.](figs/sandbox.pdf){#fig:sandbox width="0.9\columnwidth"}
+colour.](figs/sandbox.png){#fig:sandbox width="0.9\columnwidth"}
 
 ##### Applications {#sec:applications}
 
 ###### Child-Child Interaction
 
-The free-play sandbox provides the opportunity to observe children
-interacting in a natural way in an open but framed setup. As the system
-can run on a single computer platform it can easily be deployed in the
-’wild’, in places where the children naturally interact such as
-classroom. The quantity and thoughtfulness of information logged allows
-to keep a track of every interaction happening around the game.
+The free-play sandbox provides the opportunity to observe children interacting
+in a natural way in an open but framed setup. As the system can run on a single
+computer platform it can easily be deployed in the ’wild’, in places where the
+children naturally interact such as classroom. The quantity and thoughtfulness
+of information logged allows to keep a track of every interaction happening
+around the game.
 
-These advantages combined with the openness of the task proposed make
-this setup a powerful tool to observe and quantify a large spectrum of
-social behaviours expressed by children when interacting in a natural
-environment (might be interesting to add a list here). The compactness
+These advantages combined with the openness of the task proposed make this setup
+a powerful tool to observe and quantify a large spectrum of social behaviours
+expressed by children when interacting in a natural environment. The compactness
 of the system makes it easy to compare data from different locations.
 
 ###### Child-Robot Interaction {#sec:CRI}
@@ -1314,7 +1196,7 @@ developed for that purpose.
 @Fig:freeplay-arch presents the software architecture of the
 sandbox.
 
-![Software architecture of the freeplay sandbox](figs/freeplay-sandbox-architecture.svg){#fig:freeplay-arch width=80%}
+![Software architecture of the freeplay sandbox](figs/freeplay-sandbox-architecture.png){#fig:freeplay-arch width=80%}
 
 ![The free-play sandbox, viewed at runtime within ROS RViz. Simple
 computer vision is used to segment the background drawings into zones
@@ -1715,7 +1597,7 @@ which validates the location of the camera and the children to use the
 cameras to obtain facial social features.
 
 ![Durations of the interactions for the two
-conditions.[]{data-label="fig|durations"}](figs/durations.pdf){#fig:durations width=90%}
+conditions.[]{data-label="fig|durations"}](figs/durations.png){#fig:durations width=90%}
 
 @Fig:durations presents an histogram of the durations of the
 interactions for the two baselines. The distribution of the child-child
@@ -1816,7 +1698,7 @@ attitudes like *supportive*, *aggressive*, *dominant*, *annoyed*, etc.)
 ![The coding scheme used for annotating social interactions occurring
 during free-play episodes. Three main axis are studied: task engagement,
 social engagement and social
-attitude.](figs/coding-scheme.svg){#fig:coding-scheme width="\columnwidth"}
+attitude.](figs/coding-scheme.png){#fig:coding-scheme width="\columnwidth"}
 
 ###### Task engagement
 
@@ -1917,7 +1799,7 @@ form.
 <!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
 <!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
 
-### WP4: *Management, dissemination and knowledge transfer*
+### WP4: *Management, dissemination and knowledge transfer* {#wp4}
 
 
 The main tasks conducted in the WP4 include:
@@ -1945,15 +1827,7 @@ The main tasks conducted in the WP4 include:
 | D4.6 2-weeks research stay at Aldebaran robotics | Canceled due to staff changes at Aldebaran Robotics |
 
 
-Additional deliverables, not present in the original project:
-
-| | |
-|------|-------------------------------------------------------------|
-| D4.7 | | 
-| D4.7 | | 
-| D4.7 | | 
-| D4.7 | | 
-| D4.7 | | 
+Additional deliverables, not present in the original project: *see below*
 
 
 #### Academic publications
@@ -2042,7 +1916,7 @@ provocative, yet high quality, research in the field of Human-Robot Interaction.
 
 #### Student supervision and teaching
 
-From 2015 to 2017, the research has co-supervised 2 PhD students (Emmanuel Senft
+From 2015 to 2017, the researcher has **co-supervised 2 PhD students** (Emmanuel Senft
 and Chris Wallbridge).
 
 This supervision activity has led to several co-authored publications with these
@@ -2069,7 +1943,7 @@ Publications under review:
     -   C. Wallbridge; S. Lemaignan; T. Belpaeme
 
 
-Besides, the researcher engaged with teaching activities during one semester (Autumn 2016),
+Besides, the researcher **engaged with teaching activities** during one semester (Autumn 2016),
 taking over 2 hours/week of lectures and 3 hours/week of lab. The module
 (ROCO318: Mobile and Humanoid Robots) aimed at 3rd year students. The teaching
 material is open and available online:
@@ -2078,14 +1952,31 @@ material is open and available online:
 This initial teaching experience has proven instrumental in getting a permanent lecturer
 position at the host institution at the end of the project.
 
-### Robotic workshops organised with local schools
+### Public Engagement
 
+The researcher has engaged several times in public dissemination, with both adults and children.
 
+First, the researcher conducted in different occasions a total 4 demonstrations
+and Q&A sessions in 2 schools and one nursery (reaching about **75 children**).
 
-### Participation to public event to promote and present academic research in robotics
+Second, the researcher co-organised and took part to two editions of the UK
+Robotic Week ([UK robotic week
+2016](https://www.plymouth.ac.uk/whats-on/uk-robotics-week-at-plymouth-university),
+[UK robotic week
+2017](https://www.plymouth.ac.uk/whats-on/uk-robotics-week-2017)). In
+particular, a public open day was organised at each of these events, comprising
+of public demonstration of robots and a short scientific presentation to a wide
+audience. About **100 persons** were reached during these events, and the researcher
+was awarded the **Best Presentation Award** for his presentation during the UK Robotic Week 2017.
+
 
 ### Providing online visibility to the researcher's academic activities
 
+Finally, the researcher's academic website,
+[academia.skadge.org](https://academia.skadge.org/) has been regularly updated
+over the course of the project, referencing both recent news like conferences
+and talks, as well as background information on the researcher's research and a
+complete list of publications.
 
 
 <!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
@@ -2097,37 +1988,64 @@ position at the host institution at the end of the project.
 1.3 Impact
 ----------
 
-
+### 1.3.1 Scientific impact
 
 The central foreseen impact of DoRoThy was to promote and further
 develop the *European leadership in cognitive robotics as well as
 natural human-robot interaction* (Section 3.1 of Annex 1). While the
 detailed work carried out over the course of the project has
-significantly deviated from the original proposed plan (see Section 5
-below), DoRoThy has achieved this high-level goal, by effectively laying
+significantly deviated from the original proposed plan (as presented in Section
+1.1.1 and Section 5 below), DoRoThy has achieved this high-level goal, by effectively laying
 the ground for a novel research paradigm for cognitive robotics and
 human-robot interaction: deep-learning of social interaction.
 
+The two main contribution of the DoRoThy project are the 'free play sandbox'
+experimental methodology and the new PInSoRo dataset of social interactions.
+
+The free play sandbox paradigm is expected to play an important role for the
+future development of social robotics, as it offers one possible solution to the
+critical issue of the experimental validation of social robotics research: by
+offering an experimental platform eliciting natural social behaviours,
+relatively unconstrainted, essentially non-deterministic, yet sufficiently well
+defined to be measurable and easily reproducible, we have created an important
+tool to scaffold future research in social HRI. 
+
+The PInSoRo dataset of social interaction, created during the project, is
+expected to have a major impact on the way we study human-robot interaction, and
+more broadly, human-human interactions. For the first time, we make available to
+the broad academic community a dataset of social interactions rigorous enough
+and large enough to enable machine learning and data-mining at the behavioural
+level.
+
+By releasing the dataset under an open-data license, we hope to reach a large
+audience, in the social robotics community, and beyond, in the broader social
+psychology academic community. By the end of the project, the lead DoRoThy
+researcher has been already invited to give seminars and talks in about 10
+institutions worldwide, including a keynote during the 2017 edition of the
+prestigious Fall Symposium of the Association for the Advance of Artificial
+Intelligence, where the PInSoRo dataset will be officially presented. Details
+and access to the dataset are available on the project website,
+[freeplay-sandbox.github.io/](https://freeplay-sandbox.github.io/).
 
 
-The DoRoThy project has led to significant progress towards the understanding and
-analysis of complex, natural social interactions.
+
+These two contributions, alongside the other supervision and dissemination
+activities conducted by the researcher (see [WP4](#wp4)), have led to
+significant progress towards the understanding and analysis of complex, natural
+social interactions.
 
 
-<!--
-Include in this section whether the information on section 2.1 of the
-DoA (how your project will contribute to the expected impacts) is still
-relevant or needs to be updated. Include further details in the latter
-case.
--->
+### 1.3.2 Impact on the researcher career
 
-To date, 12 publications acknowledging the DoRoThy have been published
-(see list in Section 6.1, below). Four others are under review.
+During the DoRoThy project, the researcher has attended three workshop, intended
+to develop his technical knowledge and leadership skills:
 
+- a 3 days technical workshop on CUDA and Deep Neural Network, organised at
+  Plymouth University by a NVidia expert;
+- a one day course on PhD supervision, organised by the host institution;
+- a one day course on research funding, organised by the host institution.
 
-### 1.3.1 Enhancing research- and innovation-related human resources, skills and working conditions to realise the potential of individuals and to provide new career perspectives
-
-Over the course of the DoRoThy project, the researcher significantly
+Besides, over the course of the DoRoThy project, the researcher significantly
 developed his academic track record: **12 new publications**, numerous
 seminars and invited talks, including **one keynote in an international
 symposium**, the organisation of a workshop on cognitive architecture
@@ -2138,23 +2056,7 @@ and chair of the alt.HRI track for the HRI2017 conference.
 
 The researcher gave **8 seminars or invited talks** in other
 institutions (**both UK and international** ones), with **4 more to take
-place** in the coming 3 months:
-
--   11/2015: HRI2016 (invited talk - HRI mini symposium at Standford University, USA)
--   09/2016: Bristol Robotics Lab (seminar, UK)
--   11/2016: HRI2017 (invited talk - HRI mini symposium at Wien University, Austria)
--   01/2017: INRIA Bordeaux (seminar, France)
--   02/2017: Heriot Watt (seminar, UK)
--   02/2017: Edimburgh University (seminar, UK)
--   05/2017: Heriot Watt (invited talk, UK)
--   04/2017: IST Lisbon (seminar, Portugal)
-
-Planned:
-
--   11/2017: AAAI Fall Symposium - AI for HRI (**invited keynote**, USA)
--   11/2017: HRI2018 (invited talk - HRI mini symposium at Cornell University, USA)
--   01/2018: LAAS CNRS (seminar - France)
--   01/2018: IIT Genoa (seminar - Italy)
+place** in the coming 3 months (see description of [WP4](#wp4)).
 
 This academic excellence has been recognised within the Social Robotics
 academic community: **Best Design Paper award** at the HRI2017
@@ -2168,6 +2070,8 @@ as **lecturer in robotics and AI at Plymouth University**, one as
 **As such, 6 months after the end of the Marie Curie action DoRoThy, the
 research is to be established in a senior academic role in one of the
 top European research lab in robotics.**
+
+
 
 2. Update of the plan for exploitation and dissemination of result
 ==================================================================
@@ -2309,139 +2213,68 @@ List of academic publications where the DoRoThy grant is acknowledged.
 ----------------------------------
 
 
-### 6.2.1 New projects or projects with major new contributions resulting from the DoRoThy
+### 6.2.1 New projects or projects with major new contributions resulting from the DoRoThy project
 
 
 *The DoRoThy principal investigator is the main (or unique) developer
 of these softwares.*
 
 -   **gazr**
-
     -   a tool to estimate 6D head pose and gaze from facial features
-
     -   [*https://github.com/severin-lemaignan/gazr*](https://github.com/severin-lemaignan/gazr)
-
 -   **underworlds**
-
     -   3D ‘cascading’ and distributed situation assessment framework
-
     -   [*https://github.com/severin-lemaignan/underworlds*](https://github.com/severin-lemaignan/underworlds)
-
 -   **boxology**
-
     -   GUI to design large software architectures
-
     -   [*https://github.com/severin-lemaignan/boxology*](https://github.com/severin-lemaignan/boxology)
-
 -   **associative-memory**
-
-    -   a fast implementation of the Associative Memory artificial
-        > network proposed by p. Baxter
-
+    -   a fast implementation of the Associative Memory artificial network proposed by P. Baxter [@baxter2012modelling]
     -   [*https://github.com/severin-lemaignan/associative-memory*](https://github.com/severin-lemaignan/associative-memory)
-
 -   **ros-qml**
-
-    -   an extensive bridge allowing seamless interfacing between ROS
-        > and Qt QML.
-
+    -   an extensive bridge allowing seamless interfacing between ROS and Qt QML.
     -   [*https://github.com/severin-lemaignan/ros-qml-plugin*](https://github.com/severin-lemaignan/ros-qml-plugin)
-
 -   **freeplay-sandbox**
-
-    -   a ‘sandbox’ environment for the investigation of face-to-face
-        > social interactions
-
+    -   a ‘sandbox’ environment for the investigation of face-to-face social interactions
     -   **core**
-
         -   ROS-based interaction and robot controllers
-
         -   [*https://github.com/freeplay-sandbox/core*](https://github.com/freeplay-sandbox/core)
-
     -   **qt-gui**
-
         -   User interface, for multitouch tangible tables
-
         -   [*https://github.com/freeplay-sandbox/qt-gui*](https://github.com/freeplay-sandbox/qt-gui)
-
     -   **analysis**
-
-        -   Dataset analysis toolkit, including gaze analysis and
-            > skeleton extraction
-
+        -   Dataset analysis toolkit, including gaze analysis and skeleton extraction
         -   [*https://github.com/freeplay-sandbox/analysis*](https://github.com/freeplay-sandbox/analysis)
-
     -   **annotator**
-
         -   Highly efficient, multi-modal video annotation tool
-
         -   [*https://github.com/freeplay-sandbox/annotator*](https://github.com/freeplay-sandbox/annotator)
-
 -   **oro**
-
     -   the OpenRobots Ontology
-
-    -   minimalkb ontology server:
-        > [*https://github.com/severin-lemaignan/minimalkb*](https://github.com/severin-lemaignan/minimalkb)
-
-    -   liboro bindings:
-        > [*https://github.com/severin-lemaignan/liboro*](https://github.com/severin-lemaignan/liboro)
-
-    -   dialogs natural language processing:
-        > [*https://github.com/severin-lemaignan/dialogs*](https://github.com/severin-lemaignan/dialogs)
-
-    -   oro-view OpenGL ontology viewer:
-        > [*https://github.com/severin-lemaignan/oro-view*](https://github.com/severin-lemaignan/oro-view)
-
+    -   minimalkb ontology server: [*https://github.com/severin-lemaignan/minimalkb*](https://github.com/severin-lemaignan/minimalkb)
+    -   liboro bindings: [*https://github.com/severin-lemaignan/liboro*](https://github.com/severin-lemaignan/liboro)
+    -   dialogs natural language processing: [*https://github.com/severin-lemaignan/dialogs*](https://github.com/severin-lemaignan/dialogs)
+    -   oro-view OpenGL ontology viewer: [*https://github.com/severin-lemaignan/oro-view*](https://github.com/severin-lemaignan/oro-view)
 -   **openni-python**
-
     -   Python bindings for the OpenNI depth processing framework
-
     -   [*https://github.com/severin-lemaignan/openni-python*](https://github.com/severin-lemaignan/openni-python)
 
 ### 6.2.2 Other open-source projects with new contributions resulting from the DoRoThy project
 
-
-
 -   **morse**
-
-    -   a versatile simulator for robotics, with support for human-robot
-        > interactions
-
+    -   a versatile simulator for robotics, with support for human-robot interactions
     -   [*https://github.com/morse-simulator/morse*](https://github.com/morse-simulator/morse)
-
 -   **dlib**
-
     -   large library of machine-learning routines
-
     -   [*https://github.com/davisking/dlib*](https://github.com/davisking/dlib)
-
--   **naoqi\_libqi / naoqi\_libqicore**
-
+-   **naoqi_libqi / naoqi_libqicore**
     -   ROS support for Aldebaran’s Nao and Pepper robots
-
     -   [*https://github.com/ros-naoqi/*](https://github.com/ros-naoqi/)
-
 -   **ros-realsense**
-
     -   Intel-supported ROS bridge for the Realsense RGB-D cameras
-
     -   [*https://github.com/intel-ros/realsense*](https://github.com/intel-ros/realsense)
-
 -   **pyassimp**
-
     -   Python bindings for the Assimp 3D assets loading library
-
     -   [*https://github.com/assimp/assimp/*](https://github.com/assimp/assimp/)
-
-[^1]: The term ‘project’ used in this template equates to an ‘action’ in
-    certain other Horizon 2020 documentation
-
-[^2]: Beneficiaries that have received Union funding, and that plan to
-    exploit the results generated with such funding primarily in third
-    countries not associated with Horizon 2020, should indicate how the
-    Union funding will benefit Europe's overall competitiveness
-    (reciprocity principle), as set out in the grant agreement.
 
 6.3 References
 --------------
